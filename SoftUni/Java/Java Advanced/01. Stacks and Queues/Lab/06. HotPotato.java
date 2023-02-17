@@ -14,14 +14,14 @@ public class HotPotato {
 
         while (names.size() > 1) {
             for (int i = 1; i < toss; i++) {
-                names.offer(names.pop());
+                names.offer(names.poll());
             }
 
             System.out.println("Removed " + names.pop());
         }
 
         if (!names.isEmpty()) {
-            System.out.println("Last is " + names.pop());
+            System.out.println("Last is " + names.poll());
         }
     }
 }
