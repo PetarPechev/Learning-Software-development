@@ -34,12 +34,14 @@ public class TheMatrix {
         char startChar = matrix[startRow][startCol];
 
         fill(matrix, startRow, startCol, fillChar, startChar);
+        printMatrix(matrix);
+    }
 
+    private static void printMatrix(char[][] matrix) {
         System.out.println(Arrays.stream(matrix)
                 .map(String::new)
                 .collect(Collectors.joining(System.lineSeparator())));
     }
-
     private static void fill(char[][] matrix, int row, int col, char fillChar, char startChar) {
         if (matrix[row][col] != startChar) {
             return;
