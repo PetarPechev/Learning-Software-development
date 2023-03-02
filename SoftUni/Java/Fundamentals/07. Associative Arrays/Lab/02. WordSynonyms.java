@@ -14,10 +14,7 @@ public class WordSynonyms {
             String word = scanner.nextLine();
             String synonym = scanner.nextLine();
 
-            if (!wordSynonyms.containsKey(word)) {
-                wordSynonyms.put(word, new ArrayList<>());
-            }
-
+            wordSynonyms.putIfAbsent(word, new ArrayList<>());
             wordSynonyms.get(word).add(synonym);
         }
 
