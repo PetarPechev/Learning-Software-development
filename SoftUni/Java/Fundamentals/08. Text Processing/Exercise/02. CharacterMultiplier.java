@@ -18,31 +18,25 @@ public class CharacterMultiplier {
         int sum = 0;
 
         if (firstString.length() < secondString.length()) {
-            sum += addMultipliedValue(firstString, secondString) + addRest(secondString, firstString.length());
+            sum += getSum(firstString, secondString);
         } else {
-            sum += addMultipliedValue(secondString, firstString) + addRest(firstString, secondString.length());
+            sum += getSum(secondString, firstString);
         }
 
         return sum;
     }
 
-    private static int addMultipliedValue(String smallerString, String biggerString) {
+    private static int getSum(String smallerString, String biggerString) {
         int currentSum = 0;
 
         for (int i = 0; i < smallerString.length(); i++) {
             currentSum += smallerString.charAt(i) * biggerString.charAt(i);
         }
 
-        return currentSum;
-    }
-
-    private static int addRest(String text, int startIndex) {
-        int currentSum = 0;
-
-        for (int i = startIndex; i < text.length(); i++) {
-            currentSum += text.charAt(i);
+        // add rest values from the bigger String
+        for (int i = smallerString.length(); i < biggerString.length(); i++) {
+            currentSum += biggerString.charAt(i);
         }
-
         return currentSum;
     }
 }
