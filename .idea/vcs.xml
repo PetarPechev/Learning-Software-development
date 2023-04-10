@@ -2,7 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Telerik/Java Core/Arrays" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Telerik/Java Core/Git" vcs="Git" />
   </component>
 </project>
