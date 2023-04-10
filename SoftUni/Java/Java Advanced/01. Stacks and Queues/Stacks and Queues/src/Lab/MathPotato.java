@@ -2,6 +2,7 @@ package Lab;
 
 import java.util.ArrayDeque;
 import java.util.List;
+import java.util.PriorityQueue;
 import java.util.Scanner;
 
 public class MathPotato {
@@ -9,28 +10,27 @@ public class MathPotato {
         Scanner scanner = new Scanner(System.in);
 
         String[] input = scanner.nextLine().split("\\s+");
-        ArrayDeque<String> names = new ArrayDeque<>(List.of(input));
+        PriorityQueue<String> names = new PriorityQueue<>(List.of(input));
         int toss = Integer.parseInt(scanner.nextLine());
-        int cycle = 0;
+        int cycle = 1;
 
         while (names.size() > 1) {
             for (int i = 1; i < toss; i++) {
                 String currentChild = names.poll();
                 names.offer(currentChild);
             }
-            cycle++;
-            boolean isPrimeCycle = isPrime(cycle);
 
-            if (isPrimeCycle){
+            if (isPrime(cycle) ) {
                 System.out.println("Prime " + names.peek());
+
             } else {
                 System.out.println("Removed " + names.poll());
             }
-        }
 
-        if (!names.isEmpty()) {
-            System.out.println("Last is " + names.poll());
+            cycle++;
         }
+        System.out.println("Last is " + names.poll());
+
     }
 
     private static boolean isPrime(int cycle) {

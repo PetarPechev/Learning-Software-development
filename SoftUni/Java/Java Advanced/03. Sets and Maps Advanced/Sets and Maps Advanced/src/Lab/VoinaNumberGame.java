@@ -20,9 +20,6 @@ public class VoinaNumberGame {
         int rounds = 50;
 
         while (rounds-- > 0) {
-            if (firstDeck.isEmpty() || secondDeck.isEmpty()){
-                break;
-            }
 
             int firstDeckCard = firstDeck.iterator().next();
             int secondDeckCard = secondDeck.iterator().next();
@@ -36,10 +33,14 @@ public class VoinaNumberGame {
                 secondDeck.add(firstDeckCard);
                 secondDeck.add(secondDeckCard);
             }
+
+            if (firstDeck.isEmpty() || secondDeck.isEmpty()){
+                break;
+            }
         }
 
         printWinner(firstDeck, secondDeck);
-        
+
     }
 
     private static void printWinner(Set<Integer> firstDeck, Set<Integer> secondDeck) {
