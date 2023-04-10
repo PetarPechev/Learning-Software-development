@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/In class activity/In-class activity - Methods/01. User System/01. User System.iml" filepath="$PROJECT_DIR$/In class activity/In-class activity - Methods/01. User System/01. User System.iml" />
+      <module fileurl="file://$PROJECT_DIR$/In class activity/In-class activity - Methods/02. Game Of Life - Optional/02. Game Of Life - Optional.iml" filepath="$PROJECT_DIR$/In class activity/In-class activity - Methods/02. Game Of Life - Optional/02. Game Of Life - Optional.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java Core/Arrays/Arrays.iml" filepath="$PROJECT_DIR$/Java Core/Arrays/Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/In class activity/BoardR/BoardR.iml" filepath="$PROJECT_DIR$/In class activity/BoardR/BoardR.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Entry Exams/Entry Exams.iml" filepath="$PROJECT_DIR$/Entry Exams/Entry Exams.iml" />
+      <module fileurl="file://$PROJECT_DIR$/In class activity/Forum/Forum.iml" filepath="$PROJECT_DIR$/In class activity/Forum/Forum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java Core/Git/Git.iml" filepath="$PROJECT_DIR$/Java Core/Git/Git.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Telerik.iml" filepath="$PROJECT_DIR$/Telerik.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Workshops/Workshops.iml" filepath="$PROJECT_DIR$/Workshops/Workshops.iml" />
+    </modules>
+  </component>
+</project>

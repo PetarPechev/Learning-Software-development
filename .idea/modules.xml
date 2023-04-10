@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SoftUni/Java/Basics/Basics.iml" filepath="$PROJECT_DIR$/SoftUni/Java/Basics/Basics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Telerik/Entry Exams/Entry Exams.iml" filepath="$PROJECT_DIR$/Telerik/Entry Exams/Entry Exams.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SoftUni/Java/Fundamentals/Fundamentals.iml" filepath="$PROJECT_DIR$/SoftUni/Java/Fundamentals/Fundamentals.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/GitHub.iml" filepath="$PROJECT_DIR$/.idea/GitHub.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SoftUni/Java/Java Advanced/Java Advanced.iml" filepath="$PROJECT_DIR$/SoftUni/Java/Java Advanced/Java Advanced.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Telerik/Java Core/Java Core.iml" filepath="$PROJECT_DIR$/Telerik/Java Core/Java Core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Telerik/Telerik.iml" filepath="$PROJECT_DIR$/Telerik/Telerik.iml" />
+    </modules>
+  </component>
+</project>
