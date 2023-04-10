@@ -3,7 +3,7 @@ package com.company;
 public enum Status {
     OPEN,
     TODO,
-    INPROGRESS,
+    IN_PROGRESS,
     DONE,
     VERIFIED;
 
@@ -18,7 +18,7 @@ public enum Status {
                 return "Done";
             case TODO:
                 return "To Do";
-            case INPROGRESS:
+            case IN_PROGRESS:
                 return "In Progress";
             default:
                 return "Unknown";
