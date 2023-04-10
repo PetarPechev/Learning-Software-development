@@ -8,20 +8,17 @@ public class BoardItem {
 
     private static final int TITLE_MIN_LENGTH = 5;
     private static final int TITLE_MAX_LENGTH = 30;
-    protected static final Status INITIAL_STATUS = Status.OPEN;
-    protected static final Status FINAL_STATUS = Status.VERIFIED;
+    private static final Status INITIAL_STATUS = Status.OPEN;
+    private static final Status FINAL_STATUS = Status.VERIFIED;
 
     private String title;
-    private Status status;
+    protected Status status;
     private LocalDate dueDate;
-    private final List<EventLog> history = new ArrayList<>();
+    protected final List<EventLog> history = new ArrayList<>();
 
     public BoardItem(String title, LocalDate dueDate) {
-        validateDueDate(dueDate);
-        validateTitle(title);
-
-        this.title = title;
-        this.dueDate = dueDate;
+        setTitle(title);
+        setDueDate(dueDate);
         this.status = INITIAL_STATUS;
 
         logEvent(String.format("Item created: %s", viewInfo()));
@@ -38,7 +35,9 @@ public class BoardItem {
     public void setTitle(String title) {
         validateTitle(title);
 
-        logEvent(String.format("Title changed from %s to %s", getTitle(), title));
+        if (this.title != null) {
+            logEvent(String.format("Title changed from %s to %s", getTitle(), title));
+        }
 
         this.title = title;
     }
@@ -50,7 +49,9 @@ public class BoardItem {
     public void setDueDate(LocalDate dueDate) {
         validateDueDate(dueDate);
 
-        logEvent(String.format("DueDate changed from %s to %s", getDueDate(), dueDate));
+        if (this.dueDate != null) {
+            logEvent(String.format("DueDate changed from %s to %s", getDueDate(), dueDate));
+        }
 
         this.dueDate = dueDate;
     }
@@ -87,7 +88,7 @@ public class BoardItem {
         }
     }
 
-    private void logEvent(String event) {
+    protected void logEvent(String event) {
         history.add(new EventLog(event));
     }
 
