@@ -12,10 +12,6 @@ public class Task extends BoardItem{
         setAssignee(assignee);
     }
 
-    private void removeUnnecessaryEvents() {
-        history.removeIf(event -> event.getDescription().contains("null"));
-    }
-
     public String getAssignee() {
         return assignee;
     }
