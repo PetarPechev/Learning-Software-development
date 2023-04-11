@@ -23,10 +23,25 @@ public class EventLog {
         this.timestamp = LocalDateTime.now();
     }
 
+    /**
+     * Returns the description of the task.
+     *
+     * @return the description of the task
+     * @author Petar Pechev
+     */
     public String getDescription() {
         return description;
     }
 
+
+    /**
+     * Returns a string representation of the task's information.
+     * The information includes the timestamp when the task was created and the task's description.
+     *
+     * @return a string representation of the task's information
+     *
+     * @author Petar Pechev
+     */
     public String viewInfo() {
         return String.format("[%s] %s", timestamp.format(formatter), description);
     }

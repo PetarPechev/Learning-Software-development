@@ -19,6 +19,14 @@ public class Task extends BoardItem{
         return assignee;
     }
 
+
+    /**
+     * Sets the assignee name to the provided value after validating its length.
+     *
+     * @param assignee the new assignee name to set
+     * @throws IllegalArgumentException if the assignee name is shorter than ASSIGNEE_MIN_LENGTH or longer than ASSIGNEE_MAX_LENGTH
+     * @author Petar Pechev
+     */
     public void setAssignee (String assignee) {
         validateAssignee(assignee);
 
@@ -27,6 +35,14 @@ public class Task extends BoardItem{
         this.assignee = assignee;
     }
 
+
+    /**
+     * Validates the length of the assignee name.
+     *
+     * @param assignee the assignee name to validate
+     * @throws IllegalArgumentException if the assignee name is shorter than ASSIGNEE_MIN_LENGTH or longer than ASSIGNEE_MAX_LENGTH
+     * @author Petar Pechev
+     */
     private void validateAssignee(String assignee) {
         if (assignee.length() < ASSIGNEE_MIN_LENGTH || assignee.length() > ASSIGNEE_MAX_LENGTH) {
             throw new IllegalArgumentException(String.format(
