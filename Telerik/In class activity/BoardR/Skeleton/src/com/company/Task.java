@@ -19,7 +19,6 @@ public class Task extends BoardItem{
         return assignee;
     }
 
-
     /**
      * Sets the assignee name to the provided value after validating its length.
      *
@@ -34,7 +33,6 @@ public class Task extends BoardItem{
 
         this.assignee = assignee;
     }
-
 
     /**
      * Validates the length of the assignee name.

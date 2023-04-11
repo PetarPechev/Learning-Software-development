@@ -76,7 +76,6 @@ public class BoardItem {
 
     /**
      * Changes the due date of the task to the specified LocalDate object.
-     *
      * This method first validates the new due date using the "validateDueDate" method to ensure that it is not in
      * the past. If the new due date is valid, it logs an event indicating the previous and new due dates of the task
      * before changing its due date to the specified LocalDate object.
@@ -96,7 +95,6 @@ public class BoardItem {
 
     /**
      * Changes the status of the task to the specified Status object.
-     *
      * This method logs an event indicating the previous and new status of the task before changing its status
      * to the specified Status object. This method does not perform any validation on the new status value,
      * so it is the responsibility of the calling code to ensure that a valid Status object is provided.
@@ -113,7 +111,6 @@ public class BoardItem {
 
     /**
      * Reverts the status of the task to the previous status in the Status enum.
-     *
      * This method checks if the current status of the task is the INITIAL_STATUS. If it is, it logs a message
      * and does not change the status. Otherwise, it reverts the status of the task to the previous status in
      * the Status enum by calling the "setStatus" method with the previous Status object.
@@ -131,7 +128,6 @@ public class BoardItem {
 
     /**
      * Advances the status of the task to the next status in the Status enum.
-     *
      * This method checks if the current status of the task is the FINAL_STATUS. If it is, it logs a message
      * and does not change the status. Otherwise, it advances the status of the task to the next status in
      * the Status enum by calling the "setStatus" method with the next Status object.
@@ -149,7 +145,6 @@ public class BoardItem {
 
     /**
      * Returns a string representation of the EventLog object's information.
-     *
      * This method formats and returns a string that includes the title, status, and due date of the EventLog object.
      * The format of the string is "'{title}', [{status} | {dueDate}]".
      *
@@ -163,7 +158,6 @@ public class BoardItem {
 
     /**
      * Prints the information of each event in the "history" list to the console.
-     *
      * This method iterates over the "history" list and calls the "viewInfo" method on each EventLog object to obtain
      * a string representation of the event information. It then prints this string to the console.
      *
