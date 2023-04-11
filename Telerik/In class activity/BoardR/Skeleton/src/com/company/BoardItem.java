@@ -17,8 +17,11 @@ public class BoardItem {
     protected final List<EventLog> history = new ArrayList<>();
 
     public BoardItem(String title, LocalDate dueDate) {
-        setTitle(title);
-        setDueDate(dueDate);
+        validateTitle(title);
+        validateDueDate(dueDate);
+
+        this.title = title;
+        this.dueDate = dueDate;
         this.status = INITIAL_STATUS;
 
         logEvent(String.format("Item created: %s", viewInfo()));
@@ -35,9 +38,7 @@ public class BoardItem {
     public void setTitle(String title) {
         validateTitle(title);
 
-        if (this.title != null) {
-            logEvent(String.format("Title changed from %s to %s", getTitle(), title));
-        }
+        logEvent(String.format("Title changed from %s to %s", getTitle(), title));
 
         this.title = title;
     }
@@ -49,9 +50,7 @@ public class BoardItem {
     public void setDueDate(LocalDate dueDate) {
         validateDueDate(dueDate);
 
-        if (this.dueDate != null) {
-            logEvent(String.format("DueDate changed from %s to %s", getDueDate(), dueDate));
-        }
+        logEvent(String.format("DueDate changed from %s to %s", getDueDate(), dueDate));
 
         this.dueDate = dueDate;
     }
