@@ -11,7 +11,7 @@ import java.util.List;
 
 public class CreateToothpasteCommand implements Command {
 
-    public static final int EXPECTED_NUMBER_OF_ARGUMENTS = 5;
+    private static final int EXPECTED_NUMBER_OF_ARGUMENTS = 5;
 
     private final CosmeticsRepository cosmeticsRepository;
 
@@ -32,11 +32,10 @@ public class CreateToothpasteCommand implements Command {
         if (cosmeticsRepository.productExist(name)) {
             throw new IllegalArgumentException();
         } else {
-            cosmeticsRepository.createToothpaste(name, brand, price, gender, ingredients);
+           cosmeticsRepository.createToothpaste(name, brand, price, gender, ingredients);
         }
 
         return String.format("Toothpaste with name %s was created", name);
-
     }
 
 }

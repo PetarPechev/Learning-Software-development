@@ -9,8 +9,8 @@ import java.util.List;
 
 public class CategoryImpl implements Category {
 
-    public static final int NAME_MIN_LENGTH = 2;
-    public static final int NAME_MAX_LENGTH = 15;
+    private static final int NAME_MIN_LENGTH = 2;
+    private static final int NAME_MAX_LENGTH = 15;
     private static final String NAME_INVALID_MESSAGE = "Name should be between 2 and 15 symbols.";
     private static final String DELETE_PRODUCT_ERROR_MESSAGE = "Product not found in category.";
 
@@ -24,6 +24,7 @@ public class CategoryImpl implements Category {
 
     private void setName(String name) {
         ValidationHelpers.validateStringLength(name, NAME_MIN_LENGTH, NAME_MAX_LENGTH, NAME_INVALID_MESSAGE);
+
         this.name = name;
     }
 
@@ -32,12 +33,10 @@ public class CategoryImpl implements Category {
     }
 
     public List<Product> getProducts() {
-
         return new ArrayList<>(products);
     }
 
     public void addProduct(Product product) {
-
         products.add(product);
     }
 
@@ -45,20 +44,26 @@ public class CategoryImpl implements Category {
         if (!products.contains(product)){
             throw new IllegalArgumentException(DELETE_PRODUCT_ERROR_MESSAGE);
         }
+
         products.remove(product);
     }
 
     public String print() {
-        if (products.size() == 0) {
-            return String.format("#Category: %s%n" +
-                                 " #No product in this category", name);
-        }
         StringBuilder strBuilder = new StringBuilder();
+
+        if (products.isEmpty()) {
+            strBuilder.append(String.format("#Category: %s", name)).append(System.lineSeparator());
+            strBuilder.append(" #No product in this category");
+
+            return strBuilder.toString();
+        }
+
         strBuilder.append(String.format("#Category: %s%n", name));
+
         for (Product product : products) {
             strBuilder.append(product.print());
-           // strBuilder.append(" ===");
         }
+
         return strBuilder.toString();
     }
 

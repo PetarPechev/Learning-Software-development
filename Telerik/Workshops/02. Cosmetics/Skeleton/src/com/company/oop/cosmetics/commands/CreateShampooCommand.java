@@ -12,7 +12,7 @@ import java.util.List;
 
 public class CreateShampooCommand implements Command {
 
-    public static final int EXPECTED_NUMBER_OF_ARGUMENTS = 6;
+    private static final int EXPECTED_NUMBER_OF_ARGUMENTS = 6;
 
     private final CosmeticsRepository cosmeticsRepository;
 
@@ -37,9 +37,7 @@ public class CreateShampooCommand implements Command {
             cosmeticsRepository.createShampoo(name, brand, price, gender, milliliters, usageType);
         }
 
-
         return String.format("Shampoo with name %s was created", name);
-
     }
 
 }

@@ -11,7 +11,7 @@ public class AddToShoppingCartCommand implements Command {
 
     private static final String PRODUCT_ADDED_TO_SHOPPING_CART = "Product %s was added to the shopping cart!";
 
-    public static final int EXPECTED_NUMBER_OF_ARGUMENTS = 1;
+    private static final int EXPECTED_NUMBER_OF_ARGUMENTS = 1;
 
     private final CosmeticsRepository cosmeticsRepository;
 
@@ -22,7 +22,9 @@ public class AddToShoppingCartCommand implements Command {
     @Override
     public String execute(List<String> parameters) {
         ValidationHelpers.validateArgumentsCount(parameters, EXPECTED_NUMBER_OF_ARGUMENTS);
+
         String productToAddToCart = parameters.get(0);
+
         return addToShoppingCart(productToAddToCart);
     }
 

@@ -12,7 +12,7 @@ public class AddToCategoryCommand implements Command {
 
     private static final String PRODUCT_ADDED_TO_CATEGORY = "Product %s added to category %s!";
 
-    public static final int EXPECTED_NUMBER_OF_ARGUMENTS = 2;
+    private static final int EXPECTED_NUMBER_OF_ARGUMENTS = 2;
 
     private final CosmeticsRepository cosmeticsRepository;
 
@@ -23,8 +23,10 @@ public class AddToCategoryCommand implements Command {
     @Override
     public String execute(List<String> parameters) {
         ValidationHelpers.validateArgumentsCount(parameters, EXPECTED_NUMBER_OF_ARGUMENTS);
+
         String categoryToAdd = parameters.get(0);
         String productToAdd = parameters.get(1);
+
         return addToCategory(categoryToAdd, productToAdd);
     }
 

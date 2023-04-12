@@ -20,9 +20,11 @@ public class TotalPriceCommand implements Command {
     @Override
     public String execute(List<String> parameters) {
         ShoppingCart cart = cosmeticsRepository.getShoppingCart();
+
         if (cart.getProducts().isEmpty()) {
             return NO_PRODUCT_IN_SHOPPING_CART;
         }
+
         return String.format(TOTAL_PRICE_IN_SHOPPING_CART, cart.totalPrice());
     }
 

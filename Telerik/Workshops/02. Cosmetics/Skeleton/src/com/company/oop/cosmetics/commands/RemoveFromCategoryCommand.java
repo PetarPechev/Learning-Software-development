@@ -12,7 +12,7 @@ public class RemoveFromCategoryCommand implements Command {
 
     private static final String PRODUCT_REMOVED_CATEGORY = "Product %s removed from category %s!";
 
-    public static final int EXPECTED_NUMBER_OF_ARGUMENTS = 2;
+    private static final int EXPECTED_NUMBER_OF_ARGUMENTS = 2;
 
     private final CosmeticsRepository cosmeticsRepository;
 
@@ -23,8 +23,10 @@ public class RemoveFromCategoryCommand implements Command {
     @Override
     public String execute(List<String> parameters) {
         ValidationHelpers.validateArgumentsCount(parameters, EXPECTED_NUMBER_OF_ARGUMENTS);
+
         String categoryNameToRemove = parameters.get(0);
         String productToRemove = parameters.get(1);
+
         return removeCategory(categoryNameToRemove, productToRemove);
     }
 

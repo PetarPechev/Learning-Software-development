@@ -9,7 +9,7 @@ import java.util.List;
 
 public class ShowCategoryCommand implements Command {
 
-    public static final int EXPECTED_NUMBER_OF_ARGUMENTS = 1;
+    private static final int EXPECTED_NUMBER_OF_ARGUMENTS = 1;
 
     private final CosmeticsRepository cosmeticsRepository;
 
@@ -20,7 +20,9 @@ public class ShowCategoryCommand implements Command {
     @Override
     public String execute(List<String> parameters) {
         ValidationHelpers.validateArgumentsCount(parameters, EXPECTED_NUMBER_OF_ARGUMENTS);
+
         String categoryToShow = parameters.get(0);
+
         return showCategory(categoryToShow);
     }
 

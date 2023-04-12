@@ -24,6 +24,7 @@ public final class CosmeticsEngineImpl implements Engine {
 
     public void start() {
         Scanner scanner = new Scanner(System.in);
+
         while (true) {
             try {
                 String inputLine = scanner.nextLine();
@@ -50,6 +51,7 @@ public final class CosmeticsEngineImpl implements Engine {
         Command command = commandFactory.createCommandFromCommandName(commandName, cosmeticsRepository);
         List<String> parameters = extractCommandParameters(inputLine);
         String commandResult = command.execute(parameters);
+
         System.out.println(commandResult);
     }
 
@@ -75,9 +77,11 @@ public final class CosmeticsEngineImpl implements Engine {
     private List<String> extractCommandParameters(String inputLine) {
         String[] commandParts = inputLine.split(" ");
         ArrayList<String> parameters = new ArrayList<>();
+
         for (int i = 1; i < commandParts.length; i++) {
             parameters.add(commandParts[i]);
         }
+
         return parameters;
     }
 

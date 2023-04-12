@@ -7,7 +7,7 @@ import com.company.oop.cosmetics.utils.ValidationHelpers;
 
 public class ShampooImpl extends ProductImpl implements Shampoo {
     private int millilitres;
-    private UsageType usageType;
+    private final UsageType usageType;
 
 
     public ShampooImpl(String name, String brand, double price, GenderType genderType, int millilitres, UsageType usageType) {
@@ -34,8 +34,8 @@ public class ShampooImpl extends ProductImpl implements Shampoo {
 
     @Override
     public String print() {
-
         StringBuilder sb = new StringBuilder();
+
         sb.append(String.format("#%s %s",this.getName(), this.getBrandName()));
         sb.append(System.lineSeparator());
         sb.append(String.format(" #Price: $%.2f",this.getPrice()));
@@ -47,19 +47,18 @@ public class ShampooImpl extends ProductImpl implements Shampoo {
         sb.append(String.format(" #Usage: %s",this.getUsageType().name()));
         sb.append(System.lineSeparator());
         sb.append(" ===");
+
         return sb.toString();
     }
 
-
-
-
-
-    // This method should be uncommented when you are done with the class.
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
+
         if (o == null || getClass() != o.getClass()) return false;
+
         ShampooImpl shampoo = (ShampooImpl) o;
+
         return getName().equals(shampoo.getName()) &&
                 getBrandName().equals(shampoo.getBrandName()) &&
                 getPrice() == shampoo.getPrice() &&

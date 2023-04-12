@@ -17,12 +17,13 @@ public class ToothpasteImpl extends ProductImpl implements Toothpaste {
 
     @Override
     public List<String> getIngredients() {
-        return new ArrayList<>(ingredients);
+       return new ArrayList<>(ingredients);
     }
 
     @Override
     public String print() {
         StringBuilder sb = new StringBuilder();
+
         sb.append(String.format("#%s %s",this.getName(), this.getBrandName()));
         sb.append(System.lineSeparator());
         sb.append(String.format(" #Price: $%.2f",this.getPrice()));
@@ -32,18 +33,18 @@ public class ToothpasteImpl extends ProductImpl implements Toothpaste {
         sb.append(" #Ingredients: ").append(ingredients.toString());
         sb.append(System.lineSeparator());
         sb.append(" ===");
+
         return sb.toString();
     }
 
-
-
-
-     //This method should be uncommented when you are done with the class.
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
+
         if (o == null || getClass() != o.getClass()) return false;
+
         ToothpasteImpl toothpaste = (ToothpasteImpl) o;
+
         return getName().equals(toothpaste.getName()) &&
                 getBrandName().equals(toothpaste.getBrandName()) &&
                 getPrice() == toothpaste.getPrice() &&

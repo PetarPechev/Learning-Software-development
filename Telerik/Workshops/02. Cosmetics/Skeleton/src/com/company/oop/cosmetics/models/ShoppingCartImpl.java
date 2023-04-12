@@ -28,6 +28,7 @@ public class ShoppingCartImpl implements ShoppingCart {
         if (!containsProduct(product)) {
             throw new IllegalArgumentException(String.format(PRODUCT_NOT_IN_SHOPPING_CART, product.getName()));
         }
+
         products.remove(product);
     }
 
@@ -37,9 +38,11 @@ public class ShoppingCartImpl implements ShoppingCart {
 
     public double totalPrice() {
         double totalPrice = 0;
+
         for (Product product : products) {
             totalPrice += product.getPrice();
         }
+
         return totalPrice;
     }
 

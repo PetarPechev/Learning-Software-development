@@ -6,8 +6,8 @@ public class ValidationHelpers {
 
     private static final String STRING_LENGTH_ERROR = "%s must be between %d and %d characters long.";
     private static final String INVALID_NUMBER_OF_ARGUMENTS = "Invalid number of arguments. Expected: %d; received: %d.";
-    private static final String INVALID_PRICE = "Price cannot be negative number. Price should be a positive number.";
-    private static final String INVALID_MILLILITRES = "Millilitres cannot be negative number. Millilitres should be a positive number.";
+    private static final String INVALID_PRICE = "Price cannot be negative number.";
+    private static final String INVALID_MILLILITRES = "Millilitres cannot be negative number.";
 
     public static void validateIntRange(int minLength, int maxLength, int actualLength, String type) {
         if (actualLength < minLength || actualLength > maxLength) {

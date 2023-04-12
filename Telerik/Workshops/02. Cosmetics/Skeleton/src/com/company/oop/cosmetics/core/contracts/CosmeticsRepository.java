@@ -31,6 +31,8 @@ public interface CosmeticsRepository {
 
     ToothpasteImpl createToothpaste(String name, String brandName, double price, GenderType genderType, List<String> ingredients);
 
+    CreamImpl createCream(String name, String brand, double price, GenderType gender, ScentType scentType);
+
     boolean categoryExist(String categoryName);
 
     boolean productExist(String productName);
@@ -39,5 +41,4 @@ public interface CosmeticsRepository {
 
     void addProductToShoppingCart(Product product);
 
-    CreamImpl createCream(String name, String brand, double price, GenderType gender, ScentType scentType);
 }

@@ -11,7 +11,7 @@ import java.util.List;
 
 public class CreateCreamCommand implements Command {
 
-    public static final int EXPECTED_NUMBER_OF_ARGUMENTS = 5;
+    private static final int EXPECTED_NUMBER_OF_ARGUMENTS = 5;
 
     private final CosmeticsRepository cosmeticsRepository;
 
@@ -35,9 +35,7 @@ public class CreateCreamCommand implements Command {
             cosmeticsRepository.createCream(name, brand, price, gender, scentType);
         }
 
-
         return String.format("Cream with name %s was created", name);
-
     }
 
 }

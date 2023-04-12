@@ -11,7 +11,7 @@ public class CreateCategoryCommand implements Command {
     private static final String CATEGORY_CREATED = "Category with name %s was created!";
     private static final String CATEGORY_ALREADY_EXISTS = "Category with name %s already exists!";
 
-    public static final int EXPECTED_NUMBER_OF_ARGUMENTS = 1;
+    private static final int EXPECTED_NUMBER_OF_ARGUMENTS = 1;
 
     private final CosmeticsRepository repository;
 
@@ -22,7 +22,9 @@ public class CreateCategoryCommand implements Command {
     @Override
     public String execute(List<String> parameters) {
         ValidationHelpers.validateArgumentsCount(parameters, EXPECTED_NUMBER_OF_ARGUMENTS);
+
         String categoryName = parameters.get(0);
+
         return createCategory(categoryName);
     }
 

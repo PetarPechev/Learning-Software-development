@@ -63,7 +63,7 @@ public class AddToCategoryCommandTests {
     public void should_AddProductToCategory_When_ArgumentsAreValid() {
         // Arrange
         Category category = CategoryTests.addInitializedCategoryToRepository(cosmeticsRepository);
-        Product product = (Product) ShampooTests.addInitializedShampooToRepository(cosmeticsRepository);
+        Product product = ShampooTests.addInitializedShampooToRepository(cosmeticsRepository);
         List<String> params = List.of(category.getName(), product.getName());
         addToCategoryCommand.execute(params);
 

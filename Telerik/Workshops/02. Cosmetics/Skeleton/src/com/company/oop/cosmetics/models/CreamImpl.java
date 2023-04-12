@@ -19,6 +19,7 @@ public class CreamImpl extends ProductImpl implements Cream {
     @Override
     public String print() {
         StringBuilder sb = new StringBuilder();
+
         sb.append(String.format("#%s %s",this.getName(), this.getBrandName()));
         sb.append(System.lineSeparator());
         sb.append(String.format(" #Price: $%.2f",this.getPrice()));
@@ -28,6 +29,7 @@ public class CreamImpl extends ProductImpl implements Cream {
         sb.append(String.format(" #Scent: %s",this.getScent()));
         sb.append(System.lineSeparator());
         sb.append(" ===");
+
         return sb.toString();
     }
 }

@@ -48,6 +48,7 @@ public class CosmeticsRepositoryImpl implements CosmeticsRepository {
                 return product;
             }
         }
+
         throw new IllegalArgumentException(String.format(PRODUCT_DOES_NOT_EXIST,productName));
     }
 
@@ -65,7 +66,9 @@ public class CosmeticsRepositoryImpl implements CosmeticsRepository {
     @Override
     public Category createCategory(String categoryName) {
         Category category = new CategoryImpl(categoryName);
+
         this.categories.add(category);
+
         return category;
     }
 
@@ -74,6 +77,7 @@ public class CosmeticsRepositoryImpl implements CosmeticsRepository {
                                      int millilitres, UsageType usageType) {
 
         ShampooImpl shampoo = new ShampooImpl(name, brandName, price, genderType, millilitres,usageType);
+
         products.add(shampoo);
 
         return shampoo;
@@ -82,15 +86,19 @@ public class CosmeticsRepositoryImpl implements CosmeticsRepository {
     @Override
     public ToothpasteImpl createToothpaste(String name, String brandName, double price, GenderType genderType, List<String> ingredients) {
         ToothpasteImpl toothpaste = new ToothpasteImpl(name, brandName, price, genderType, ingredients);
+
         products.add(toothpaste);
 
-        return new ToothpasteImpl(name, brandName, price, genderType, ingredients);
+        return toothpaste;
     }
+
+
 
     @Override
     public CreamImpl createCream(String name, String brandName, double price, GenderType genderType, ScentType scentType) {
-        CreamImpl toothpaste = new CreamImpl(name, brandName, price, genderType, scentType);
-        products.add(toothpaste);
+        CreamImpl cream = new CreamImpl(name, brandName, price, genderType, scentType);
+
+        products.add(cream);
 
         return new CreamImpl(name, brandName, price, genderType, scentType);
     }
@@ -132,5 +140,7 @@ public class CosmeticsRepositoryImpl implements CosmeticsRepository {
     public void removeProductFromCart(Product product) {
         shoppingCart.removeProduct(product);
     }
+
+
 
 }

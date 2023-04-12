@@ -11,7 +11,7 @@ public class RemoveFromShoppingCartCommand implements Command {
 
     private static final String PRODUCT_REMOVED_FROM_SHOPPING_CART = "Product %s was removed from the shopping cart!";
 
-    public static final int EXPECTED_NUMBER_OF_ARGUMENTS = 1;
+    private static final int EXPECTED_NUMBER_OF_ARGUMENTS = 1;
 
     private final CosmeticsRepository cosmeticsRepository;
 
@@ -22,7 +22,9 @@ public class RemoveFromShoppingCartCommand implements Command {
     @Override
     public String execute(List<String> parameters) {
         ValidationHelpers.validateArgumentsCount(parameters, EXPECTED_NUMBER_OF_ARGUMENTS);
+
         String productToRemoveFromCart = parameters.get(0);
+
         return removeFromShoppingCart(productToRemoveFromCart);
     }
 
