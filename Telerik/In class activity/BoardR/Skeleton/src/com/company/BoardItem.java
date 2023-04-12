@@ -14,7 +14,7 @@ public class BoardItem {
     private String title;
     private Status status;
     private LocalDate dueDate;
-    protected final List<EventLog> history = new ArrayList<>();
+    private final List<EventLog> history = new ArrayList<>();
 
 
     public BoardItem(String title,Status status, LocalDate dueDate) {
