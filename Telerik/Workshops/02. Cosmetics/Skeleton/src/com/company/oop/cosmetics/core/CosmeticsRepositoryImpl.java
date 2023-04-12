@@ -1,21 +1,18 @@
 package com.company.oop.cosmetics.core;
 
 import com.company.oop.cosmetics.core.contracts.CosmeticsRepository;
-import com.company.oop.cosmetics.models.CategoryImpl;
-import com.company.oop.cosmetics.models.ShampooImpl;
-import com.company.oop.cosmetics.models.ShoppingCartImpl;
-import com.company.oop.cosmetics.models.ToothpasteImpl;
+import com.company.oop.cosmetics.models.*;
 import com.company.oop.cosmetics.models.contracts.Category;
 import com.company.oop.cosmetics.models.contracts.Product;
 import com.company.oop.cosmetics.models.contracts.ShoppingCart;
 import com.company.oop.cosmetics.models.enums.GenderType;
+import com.company.oop.cosmetics.models.enums.ScentType;
 import com.company.oop.cosmetics.models.enums.UsageType;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class CosmeticsRepositoryImpl implements CosmeticsRepository {
-
     private static final String PRODUCT_DOES_NOT_EXIST = "Product %s does not exist!";
     private static final String CATEGORY_DOES_NOT_EXIST = "Category %s does not exist!";
 
@@ -29,7 +26,6 @@ public class CosmeticsRepositoryImpl implements CosmeticsRepository {
         this.shoppingCart = new ShoppingCartImpl();
     }
 
-
     @Override
     public ShoppingCart getShoppingCart() {
         return shoppingCart;
@@ -37,7 +33,6 @@ public class CosmeticsRepositoryImpl implements CosmeticsRepository {
 
     @Override
     public List<Category> getCategories() {
-
         return new ArrayList<>(categories);
     }
 
@@ -90,6 +85,14 @@ public class CosmeticsRepositoryImpl implements CosmeticsRepository {
         products.add(toothpaste);
 
         return new ToothpasteImpl(name, brandName, price, genderType, ingredients);
+    }
+
+    @Override
+    public CreamImpl createCream(String name, String brandName, double price, GenderType genderType, ScentType scentType) {
+        CreamImpl toothpaste = new CreamImpl(name, brandName, price, genderType, scentType);
+        products.add(toothpaste);
+
+        return new CreamImpl(name, brandName, price, genderType, scentType);
     }
 
     @Override

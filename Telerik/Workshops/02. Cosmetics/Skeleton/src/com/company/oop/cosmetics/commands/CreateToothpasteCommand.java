@@ -29,9 +29,14 @@ public class CreateToothpasteCommand implements Command {
         GenderType gender = ParsingHelpers.tryParseGender(parameters.get(3));
         List<String> ingredients = List.of(parameters.get(4).split(","));
 
-        cosmeticsRepository.createToothpaste(name, brand, price, gender, ingredients);
+        if (cosmeticsRepository.productExist(name)) {
+            throw new IllegalArgumentException();
+        } else {
+            cosmeticsRepository.createToothpaste(name, brand, price, gender, ingredients);
+        }
 
-        return String.format(ParsingHelpers.PRODUCT_CREATED, "Toothpaste", name);
+        return String.format("Toothpaste with name %s was created", name);
+
     }
 
 }

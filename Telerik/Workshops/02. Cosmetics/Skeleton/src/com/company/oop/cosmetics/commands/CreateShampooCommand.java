@@ -31,10 +31,15 @@ public class CreateShampooCommand implements Command {
         int milliliters = ParsingHelpers.tryParseInt(parameters.get(4), ParsingHelpers.INVALID_MILLILITRES);
         UsageType usageType = ParsingHelpers.tryParseUsageType(parameters.get(5));
 
-        cosmeticsRepository.createShampoo(name, brand, price, gender, milliliters, usageType);
+        if (cosmeticsRepository.productExist(name)) {
+            throw new IllegalArgumentException();
+        } else {
+            cosmeticsRepository.createShampoo(name, brand, price, gender, milliliters, usageType);
+        }
 
 
-        return String.format(ParsingHelpers.PRODUCT_CREATED, "Shampoo", name);
+        return String.format("Shampoo with name %s was created", name);
+
     }
 
 }

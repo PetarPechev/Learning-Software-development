@@ -17,7 +17,7 @@ public class ToothpasteImpl extends ProductImpl implements Toothpaste {
 
     @Override
     public List<String> getIngredients() {
-        return ingredients;
+        return new ArrayList<>(ingredients);
     }
 
     @Override

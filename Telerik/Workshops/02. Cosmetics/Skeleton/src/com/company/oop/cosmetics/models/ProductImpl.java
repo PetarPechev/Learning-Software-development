@@ -14,7 +14,7 @@ public abstract class ProductImpl implements Product {
     private String name;
     private String brand;
     private double price;
-    private GenderType gender;
+    private final GenderType gender;
 
     protected ProductImpl (String name, String brand, double price, GenderType genderType){
         setName(name);
