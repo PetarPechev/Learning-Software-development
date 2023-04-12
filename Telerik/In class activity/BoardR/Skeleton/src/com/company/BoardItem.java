@@ -12,21 +12,25 @@ public class BoardItem {
     private static final Status FINAL_STATUS = Status.VERIFIED;
 
     private String title;
-    protected Status status;
+    private Status status;
     private LocalDate dueDate;
     protected final List<EventLog> history = new ArrayList<>();
 
-    public BoardItem(String title, LocalDate dueDate) {
+
+    public BoardItem(String title,Status status, LocalDate dueDate) {
         validateTitle(title);
         validateDueDate(dueDate);
 
         this.title = title;
         this.dueDate = dueDate;
-        this.status = INITIAL_STATUS;
+        this.status = status;
 
         logEvent(String.format("Item created: %s", viewInfo()));
     }
 
+    public BoardItem(String title, LocalDate dueDate) {
+        this(title, INITIAL_STATUS, dueDate);
+    }
 
     /**
      * Returns the current status of the task.

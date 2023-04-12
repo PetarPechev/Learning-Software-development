@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="33b7041c-ba45-4532-ad45-609facc2133c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Skeleton/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Skeleton/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Skeleton/src/com/company/BoardItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/Skeleton/src/com/company/BoardItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Skeleton/src/com/company/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/Skeleton/src/com/company/Task.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,23 +38,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Learning - Software development - GitHub/GitHub&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "false",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Learning - Software development - GitHub/GitHub",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
@@ -89,7 +90,7 @@
       <workItem from="1681246456722" duration="667000" />
       <workItem from="1681247154455" duration="2416000" />
       <workItem from="1681249599380" duration="1546000" />
-      <workItem from="1681296214233" duration="2692000" />
+      <workItem from="1681296214233" duration="5276000" />
     </task>
     <task id="LOCAL-00001" summary="Add Class Task and Class Issue">
       <created>1681171120052</created>
@@ -140,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681255136072</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add constructor">
+      <created>1681298989333</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1681298989333</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +175,7 @@
     <MESSAGE value="change constructor parameters" />
     <MESSAGE value="Add comments for all methods" />
     <MESSAGE value="edit comments for all methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit comments for all methods" />
+    <MESSAGE value="add constructor" />
+    <option name="LAST_COMMIT_MESSAGE" value="add constructor" />
   </component>
 </project>
