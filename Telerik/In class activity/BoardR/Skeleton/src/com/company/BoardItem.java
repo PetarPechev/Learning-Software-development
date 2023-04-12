@@ -17,7 +17,7 @@ public class BoardItem {
     private final List<EventLog> history = new ArrayList<>();
 
 
-    public BoardItem(String title,Status status, LocalDate dueDate) {
+    public BoardItem(String title, Status status, LocalDate dueDate) {
         validateTitle(title);
         validateDueDate(dueDate);
 
