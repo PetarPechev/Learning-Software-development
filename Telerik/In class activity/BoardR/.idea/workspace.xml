@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="33b7041c-ba45-4532-ad45-609facc2133c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Skeleton/src/com/company/BoardItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/Skeleton/src/com/company/BoardItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Skeleton/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Skeleton/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Skeleton/src/com/company/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/Skeleton/src/com/company/Task.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +40,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
@@ -89,7 +88,8 @@
       <workItem from="1681245435164" duration="1009000" />
       <workItem from="1681246456722" duration="667000" />
       <workItem from="1681247154455" duration="2416000" />
-      <workItem from="1681249599380" duration="598000" />
+      <workItem from="1681249599380" duration="1546000" />
+      <workItem from="1681296214233" duration="2692000" />
     </task>
     <task id="LOCAL-00001" summary="Add Class Task and Class Issue">
       <created>1681171120052</created>
@@ -133,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681237373775</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="edit comments for all methods">
+      <created>1681255136072</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1681255136072</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +166,7 @@
     <MESSAGE value="removed testing class" />
     <MESSAGE value="change constructor parameters" />
     <MESSAGE value="Add comments for all methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add comments for all methods" />
+    <MESSAGE value="edit comments for all methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit comments for all methods" />
   </component>
 </project>
