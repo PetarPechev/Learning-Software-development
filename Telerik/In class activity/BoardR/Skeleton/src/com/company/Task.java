@@ -8,7 +8,7 @@ public class Task extends BoardItem{
     private static final Status TASK_INITIAL_STATUS = Status.TODO;
     private String assignee;
     public Task(String title, String assignee, LocalDate dueDate) {
-        super(title, dueDate, TASK_INITIAL_STATUS);
+        super(title, TASK_INITIAL_STATUS, dueDate);
 
         validateAssignee(assignee);
         this.assignee = assignee;
