@@ -3,33 +3,57 @@ package com.company.oop.cosmetics.models;
 import com.company.oop.cosmetics.models.contracts.Cream;
 import com.company.oop.cosmetics.models.enums.GenderType;
 import com.company.oop.cosmetics.models.enums.ScentType;
+import com.company.oop.cosmetics.utils.ValidationHelpers;
 
 public class CreamImpl extends ProductImpl implements Cream {
-    private final ScentType scent;
+
+    private static final int NAME_MIN_LENGTH = 3;
+    private static final int NAME_MAX_LENGTH = 15;
+    private static final int BRAND_NAME_MIN_LENGTH = 3;
+    private static final int BRAND_NAME_MAX_LENGTH = 15;
+
+    private final ScentType scentType;
+
     public CreamImpl(String name, String brand, double price, GenderType genderType, ScentType scentType) {
         super(name, brand, price, genderType);
-        this.scent = scentType;
+
+        this.scentType = scentType;
+    }
+
+    @Override
+    protected void validateName(String name) {
+        ValidationHelpers.validateStringLength(name, NAME_MIN_LENGTH, NAME_MAX_LENGTH, "name");
+    }
+
+    @Override
+    protected void validateBrand(String brand) {
+        ValidationHelpers.validateStringLength(brand, BRAND_NAME_MIN_LENGTH, BRAND_NAME_MAX_LENGTH, "brand");
     }
 
     @Override
     public ScentType getScent() {
-        return scent;
+        return scentType;
     }
+
 
     @Override
     public String print() {
-        StringBuilder sb = new StringBuilder();
+        return String.format("%s%n" +
+                " #Scent: %s%n", super.print(), scentType);
+    }
 
-        sb.append(String.format("#%s %s",this.getName(), this.getBrandName()));
-        sb.append(System.lineSeparator());
-        sb.append(String.format(" #Price: $%.2f",this.getPrice()));
-        sb.append(System.lineSeparator());
-        sb.append(String.format(" #Gender: %s",this.getGenderType().name()));
-        sb.append(System.lineSeparator());
-        sb.append(String.format(" #Scent: %s",this.getScent()));
-        sb.append(System.lineSeparator());
-        sb.append(" ===");
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
 
-        return sb.toString();
+        if (o == null || getClass() != o.getClass()) return false;
+
+        CreamImpl cream = (CreamImpl) o;
+
+        return getName().equals(cream.getName()) &&
+                getBrandName().equals(cream.getBrandName()) &&
+                getPrice() == cream.getPrice() &&
+                getGenderType().equals(cream.getGenderType()) &&
+                getScent() == cream.getScent();
     }
 }

@@ -12,6 +12,7 @@ public class ToothpasteImpl extends ProductImpl implements Toothpaste {
 
     public ToothpasteImpl(String name, String brandName, double price, GenderType genderType, List<String> ingredients) {
         super(name, brandName, price, genderType);
+
         this.ingredients = new ArrayList<>(ingredients);
     }
 
@@ -22,19 +23,8 @@ public class ToothpasteImpl extends ProductImpl implements Toothpaste {
 
     @Override
     public String print() {
-        StringBuilder sb = new StringBuilder();
-
-        sb.append(String.format("#%s %s",this.getName(), this.getBrandName()));
-        sb.append(System.lineSeparator());
-        sb.append(String.format(" #Price: $%.2f",this.getPrice()));
-        sb.append(System.lineSeparator());
-        sb.append(String.format(" #Gender: %s",this.getGenderType().name()));
-        sb.append(System.lineSeparator());
-        sb.append(" #Ingredients: ").append(ingredients.toString());
-        sb.append(System.lineSeparator());
-        sb.append(" ===");
-
-        return sb.toString();
+        return String.format("%s%n" +
+                " #Ingredients: %s%n", super.print(), ingredients);
     }
 
     @Override

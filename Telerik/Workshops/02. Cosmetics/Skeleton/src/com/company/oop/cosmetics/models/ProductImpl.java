@@ -4,52 +4,50 @@ import com.company.oop.cosmetics.models.contracts.Product;
 import com.company.oop.cosmetics.models.enums.GenderType;
 import com.company.oop.cosmetics.utils.ValidationHelpers;
 
-public abstract class ProductImpl implements Product {
+public class ProductImpl implements Product {
     private static final int NAME_MIN_LENGTH = 3;
     private static final int NAME_MAX_LENGTH = 10;
     private static final int BRAND_NAME_MIN_LENGTH = 2;
     private static final int BRAND_NAME_MAX_LENGTH = 10;
 
-
     private String name;
     private String brand;
     private double price;
-    private final GenderType gender;
+    private final GenderType genderType;
 
-    protected ProductImpl (String name, String brand, double price, GenderType genderType){
+    public ProductImpl(String name, String brand, double price, GenderType genderType) {
         setName(name);
         setBrand(brand);
         setPrice(price);
-        this.gender = genderType;
+        this.genderType = genderType;
     }
 
     private void setName(String name) {
-        ValidationHelpers.validateStringLength(name, NAME_MIN_LENGTH, NAME_MAX_LENGTH, "Name");
+        validateName(name);
 
         this.name = name;
     }
-
-    private void setBrand(String brand) {
-        ValidationHelpers.validateStringLength(brand, BRAND_NAME_MIN_LENGTH, BRAND_NAME_MAX_LENGTH, "Brand");
-
-        this.brand = brand;
-    }
-
-    private void setPrice(double price) {
-        ValidationHelpers.validatePrice(price);
-
-        this.price = price;
-    }
-
 
     @Override
     public String getName() {
         return name;
     }
 
+    private void setBrand(String brand) {
+        validateBrand(brand);
+
+        this.brand = brand;
+    }
+
     @Override
     public String getBrandName() {
         return brand;
+    }
+
+    private void setPrice(double price) {
+        validatePrice(price);
+
+        this.price = price;
     }
 
     @Override
@@ -59,8 +57,25 @@ public abstract class ProductImpl implements Product {
 
     @Override
     public GenderType getGenderType() {
-        return gender;
+        return genderType;
     }
 
+    protected void validateName(String name) {
+        ValidationHelpers.validateStringLength(name, NAME_MIN_LENGTH, NAME_MAX_LENGTH, "name");
+    }
 
+    protected void validateBrand(String brand) {
+        ValidationHelpers.validateStringLength(brand, BRAND_NAME_MIN_LENGTH, BRAND_NAME_MAX_LENGTH, "brand");
+    }
+
+    protected void validatePrice(double price) {
+        ValidationHelpers.validatePrice(price);
+    }
+
+    @Override
+    public String print() {
+        return String.format("#%s %s%n" +
+                " #Price: $%.2f%n" +
+                " #Gender: %s", name, brand, price, genderType);
+    }
 }

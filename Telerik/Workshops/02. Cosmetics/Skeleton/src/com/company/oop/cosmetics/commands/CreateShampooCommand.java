@@ -12,6 +12,10 @@ import java.util.List;
 
 public class CreateShampooCommand implements Command {
 
+    private static final String SHAMPOO_ALREADY_EXISTS = "Shampoo with name %s already exists!";
+
+    private static final String SHAMPOO_CREATED = "Shampoo with name %s was created!";
+
     private static final int EXPECTED_NUMBER_OF_ARGUMENTS = 6;
 
     private final CosmeticsRepository cosmeticsRepository;
@@ -24,20 +28,24 @@ public class CreateShampooCommand implements Command {
     public String execute(List<String> parameters) {
         ValidationHelpers.validateArgumentsCount(parameters, EXPECTED_NUMBER_OF_ARGUMENTS);
 
+        createShampoo(parameters);
+
+        return String.format(SHAMPOO_CREATED, parameters.get(0));
+    }
+
+    private void createShampoo(List<String> parameters) {
         String name = parameters.get(0);
         String brand = parameters.get(1);
         double price = ParsingHelpers.tryParseDouble(parameters.get(2), ParsingHelpers.INVALID_PRICE);
-        GenderType gender = ParsingHelpers.tryParseGender(parameters.get(3));
+        GenderType genderType = ParsingHelpers.tryParseGender(parameters.get(3));
         int milliliters = ParsingHelpers.tryParseInt(parameters.get(4), ParsingHelpers.INVALID_MILLILITRES);
         UsageType usageType = ParsingHelpers.tryParseUsageType(parameters.get(5));
 
         if (cosmeticsRepository.productExist(name)) {
-            throw new IllegalArgumentException();
-        } else {
-            cosmeticsRepository.createShampoo(name, brand, price, gender, milliliters, usageType);
+            throw new IllegalArgumentException(String.format(SHAMPOO_ALREADY_EXISTS, name));
         }
 
-        return String.format("Shampoo with name %s was created", name);
+        cosmeticsRepository.createShampoo(name, brand, price, genderType, milliliters, usageType);
     }
 
 }

@@ -49,20 +49,19 @@ public class CategoryImpl implements Category {
     }
 
     public String print() {
-        StringBuilder strBuilder = new StringBuilder();
-
-        if (products.isEmpty()) {
-            strBuilder.append(String.format("#Category: %s", name)).append(System.lineSeparator());
-            strBuilder.append(" #No product in this category");
-
-            return strBuilder.toString();
+        if (products.size() == 0) {
+            return String.format("#Category: %s%n" +
+                    " #No product in this category", name);
         }
 
+        StringBuilder strBuilder = new StringBuilder();
         strBuilder.append(String.format("#Category: %s%n", name));
 
         for (Product product : products) {
             strBuilder.append(product.print());
+            strBuilder.append(" ===");
         }
+
 
         return strBuilder.toString();
     }

@@ -12,6 +12,7 @@ public class ShampooImpl extends ProductImpl implements Shampoo {
 
     public ShampooImpl(String name, String brand, double price, GenderType genderType, int millilitres, UsageType usageType) {
         super(name, brand, price, genderType);
+
         setMillilitres(millilitres);
         this.usageType = usageType;
     }
@@ -34,21 +35,9 @@ public class ShampooImpl extends ProductImpl implements Shampoo {
 
     @Override
     public String print() {
-        StringBuilder sb = new StringBuilder();
-
-        sb.append(String.format("#%s %s",this.getName(), this.getBrandName()));
-        sb.append(System.lineSeparator());
-        sb.append(String.format(" #Price: $%.2f",this.getPrice()));
-        sb.append(System.lineSeparator());
-        sb.append(String.format(" #Gender: %s",this.getGenderType().name()));
-        sb.append(System.lineSeparator());
-        sb.append(String.format(" #Milliliters: %d",this.getMillilitres()));
-        sb.append(System.lineSeparator());
-        sb.append(String.format(" #Usage: %s",this.getUsageType().name()));
-        sb.append(System.lineSeparator());
-        sb.append(" ===");
-
-        return sb.toString();
+        return String.format("%s%n" +
+                " #Milliliters: %d%n" +
+                " #Usage: %s%n", super.print(), millilitres, usageType);
     }
 
     @Override

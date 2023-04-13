@@ -43,13 +43,13 @@ public class CosmeticsRepositoryImpl implements CosmeticsRepository {
 
     @Override
     public Product findProductByName(String productName) {
-        for (Product product : getProducts()){
-            if (product.getName().equals(productName)){
+        for (Product product : products) {
+            if (product.getName().equalsIgnoreCase(productName)) {
                 return product;
             }
         }
 
-        throw new IllegalArgumentException(String.format(PRODUCT_DOES_NOT_EXIST,productName));
+        throw new IllegalArgumentException(String.format(PRODUCT_DOES_NOT_EXIST, productName));
     }
 
     @Override
@@ -85,6 +85,7 @@ public class CosmeticsRepositoryImpl implements CosmeticsRepository {
 
     @Override
     public ToothpasteImpl createToothpaste(String name, String brandName, double price, GenderType genderType, List<String> ingredients) {
+
         ToothpasteImpl toothpaste = new ToothpasteImpl(name, brandName, price, genderType, ingredients);
 
         products.add(toothpaste);
@@ -96,11 +97,12 @@ public class CosmeticsRepositoryImpl implements CosmeticsRepository {
 
     @Override
     public CreamImpl createCream(String name, String brandName, double price, GenderType genderType, ScentType scentType) {
+
         CreamImpl cream = new CreamImpl(name, brandName, price, genderType, scentType);
 
         products.add(cream);
 
-        return new CreamImpl(name, brandName, price, genderType, scentType);
+        return cream;
     }
 
     @Override
