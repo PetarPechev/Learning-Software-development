@@ -13,5 +13,6 @@ public interface Journey {
     String getDestination();
 
     double calculateTravelCosts();
+    int getId();
 
 }

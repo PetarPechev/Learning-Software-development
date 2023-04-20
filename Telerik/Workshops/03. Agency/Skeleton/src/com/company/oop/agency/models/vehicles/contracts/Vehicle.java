@@ -10,4 +10,6 @@ public interface Vehicle {
 
     double getPricePerKilometer();
 
+    int getId();
+
 }

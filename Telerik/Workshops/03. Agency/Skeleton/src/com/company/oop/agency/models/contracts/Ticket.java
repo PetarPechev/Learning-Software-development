@@ -7,5 +7,6 @@ public interface Ticket {
     double calculatePrice();
 
     double getAdministrativeCosts();
+    int getId();
 
 }

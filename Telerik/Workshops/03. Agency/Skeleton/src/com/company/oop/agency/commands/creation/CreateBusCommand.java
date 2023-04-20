@@ -3,6 +3,7 @@ package com.company.oop.agency.commands.creation;
 import com.company.oop.agency.commands.contracts.Command;
 import com.company.oop.agency.core.contracts.AgencyRepository;
 import com.company.oop.agency.models.vehicles.contracts.Bus;
+import com.company.oop.agency.models.vehicles.contracts.Vehicle;
 import com.company.oop.agency.utils.ValidationHelper;
 
 import java.util.List;
@@ -30,7 +31,7 @@ public class CreateBusCommand implements Command {
 
         parseParameters(parameters);
 
-        Bus createdBus = agencyRepository.createBus(passengerCapacity, pricePerKilometer);
+        Vehicle createdBus = agencyRepository.createBus(passengerCapacity, pricePerKilometer);
 
         return String.format(VEHICLE_CREATED_MESSAGE, createdBus.getId());
     }

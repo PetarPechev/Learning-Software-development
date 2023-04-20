@@ -3,9 +3,9 @@ package com.company.oop.agency.core;
 import com.company.oop.agency.exceptions.ElementNotFoundException;
 import com.company.oop.agency.models.contracts.Journey;
 import com.company.oop.agency.models.contracts.Ticket;
+import com.company.oop.agency.models.vehicles.AirplaneImpl;
 import com.company.oop.agency.models.vehicles.BusImpl;
-import com.company.oop.agency.models.vehicles.contracts.Airplane;
-import com.company.oop.agency.models.vehicles.contracts.Bus;
+import com.company.oop.agency.models.vehicles.TrainImpl;
 import com.company.oop.agency.models.vehicles.contracts.Train;
 import com.company.oop.agency.models.vehicles.contracts.Vehicle;
 import com.company.oop.agency.core.contracts.AgencyRepository;
@@ -53,29 +53,35 @@ public class AgencyRepositoryImpl implements AgencyRepository {
 
     @Override
     public Journey findJourneyById(int id) {
+
         throw new UnsupportedOperationException("Not implemented yet.");
     }
 
     @Override
     public Ticket findTicketById(int id) {
+
         throw new UnsupportedOperationException("Not implemented yet.");
     }
 
     @Override
-    public Airplane createAirplane(int passengerCapacity, double pricePerKilometer, boolean hasFreeFood) {
-        throw new UnsupportedOperationException("Not implemented yet.");
+    public Vehicle createAirplane(int passengerCapacity, double pricePerKilometer, boolean hasFreeFood) {
+        Vehicle airplane = new AirplaneImpl(++nextId, passengerCapacity, pricePerKilometer, hasFreeFood);
+        this.vehicles.add(airplane);
+        return airplane;
     }
 
     @Override
-    public Bus createBus(int passengerCapacity, double pricePerKilometer) {
-        Bus bus = new BusImpl(++nextId, passengerCapacity, pricePerKilometer);
+    public Vehicle createBus(int passengerCapacity, double pricePerKilometer) {
+        Vehicle bus = new BusImpl(++nextId, passengerCapacity, pricePerKilometer);
         this.vehicles.add(bus);
         return bus;
     }
 
     @Override
-    public Train createTrain(int passengerCapacity, double pricePerKilometer, int carts) {
-        throw new UnsupportedOperationException("Not implemented yet.");
+    public Vehicle createTrain(int passengerCapacity, double pricePerKilometer, int carts) {
+        Vehicle train = new TrainImpl(++nextId, passengerCapacity, pricePerKilometer, carts);
+        this.vehicles.add(train);
+        return train;
     }
 
     @Override
