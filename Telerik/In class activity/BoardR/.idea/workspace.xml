@@ -5,76 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33b7041c-ba45-4532-ad45-609facc2133c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Workshops/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/01. Cosmetics/Skeleton/src/com/company/oop/cosmetics/models/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/Skeleton.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/lib/apiguardian-api-1.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/lib/hamcrest-core-1.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/lib/junit-jupiter-5.4.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/lib/junit-jupiter-api-5.4.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/lib/junit-jupiter-engine-5.4.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/lib/junit-jupiter-params-5.4.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/lib/junit-platform-commons-1.4.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/lib/junit-platform-engine-1.4.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/lib/opentest4j-1.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/Startup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/commands/AddToCategoryCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/commands/AddToShoppingCartCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/commands/CreateCategoryCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/commands/CreateCreamCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/commands/CreateShampooCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/commands/CreateToothpasteCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/commands/RemoveFromCategoryCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/commands/RemoveFromShoppingCartCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/commands/ShowCategoryCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/commands/TotalPriceCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/commands/enums/CommandType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/core/CommandFactoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/core/CosmeticsEngineImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/core/CosmeticsRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/core/contracts/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/core/contracts/CommandFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/core/contracts/CosmeticsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/core/contracts/Engine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/models/CategoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/models/ShampooImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/models/ShoppingCartImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/models/ToothpasteImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/models/contracts/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/models/contracts/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/models/contracts/Shampoo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/models/contracts/ShoppingCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/models/contracts/Toothpaste.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/models/enums/GenderType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/models/enums/ScentType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/models/enums/UsageType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/utils/ParsingHelpers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/utils/ValidationHelpers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/tests/com/company/oop/cosmetics/tests/commands/AddToCategoryCommandTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/tests/com/company/oop/cosmetics/tests/commands/AddToShoppingCartCommandTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/tests/com/company/oop/cosmetics/tests/commands/CreateCategoryCommandTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/tests/com/company/oop/cosmetics/tests/commands/CreateCreamCommandTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/tests/com/company/oop/cosmetics/tests/commands/CreateShampooCommandTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/tests/com/company/oop/cosmetics/tests/commands/CreateToothpasteCommandTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/tests/com/company/oop/cosmetics/tests/commands/RemoveFromCategoryCommandTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/tests/com/company/oop/cosmetics/tests/commands/RemoveFromShoppingCartCommandTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/tests/com/company/oop/cosmetics/tests/commands/ShowCategoryCommandTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/tests/com/company/oop/cosmetics/tests/core/CosmeticsRepositoryImplTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/tests/com/company/oop/cosmetics/tests/models/CategoryTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/tests/com/company/oop/cosmetics/tests/models/CreamTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/tests/com/company/oop/cosmetics/tests/models/ShampooTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/tests/com/company/oop/cosmetics/tests/models/ShoppingCartTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/tests/com/company/oop/cosmetics/tests/models/ToothpasteTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workshops/02. Cosmetics/Skeleton/tests/com/company/oop/cosmetics/tests/utils/TestUtilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Workshops/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Workshops/.idea/libraries/lib.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Workshops/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Workshops/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Workshops/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Workshops/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Workshops/01. Cosmetics/01. Cosmetics.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Workshops/01. Cosmetics/01. Cosmetics.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Workshops/Workshops.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Skeleton/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Skeleton/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,23 +37,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "false",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Learning - Software development - GitHub/Telerik A48",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Learning - Software development - GitHub/Telerik A48&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
@@ -158,6 +90,7 @@
       <workItem from="1681247154455" duration="2416000" />
       <workItem from="1681249599380" duration="1546000" />
       <workItem from="1681296214233" duration="8045000" />
+      <workItem from="1681400056492" duration="1976000" />
     </task>
     <task id="LOCAL-00001" summary="Add Class Task and Class Issue">
       <created>1681171120052</created>
