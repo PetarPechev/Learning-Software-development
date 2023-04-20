@@ -1,5 +1,7 @@
 package com.company.oop.agency.utils;
 
+import com.company.oop.agency.exceptions.InvalidUserInputException;
+
 import java.util.List;
 
 public class ValidationHelper {
@@ -10,6 +12,7 @@ public class ValidationHelper {
     private static final String STRING_LENGTH_ERROR = "The %s length cannot be less than %d or more than %d symbols long.";
     private static final String INVALID_PRICE_PER_KILOMETER = "%s with a price per kilometer lower than $%.2f or higher than $%.2f cannot exist!";
     private static final String INVALID_DISTANCE_NUMBER = "The Distance cannot be less than %d or more than %d kilometers.";
+    private static final String INVALID_COSTS_NUMBER = "Costs cannot be negative number.";
 
 
     public static void validateValueInRange(double value, double min, double max, String errorMessage) {
@@ -45,6 +48,12 @@ public class ValidationHelper {
 
     public static void validateDistance(int distance, double minDistance, double maxDistance) {
         validateValueInRange(distance, minDistance, maxDistance, INVALID_DISTANCE_NUMBER);
+    }
+
+    public static void validateCosts(double cost) {
+        if (cost < 0.00) {
+            throw new InvalidUserInputException(INVALID_COSTS_NUMBER);
+        }
     }
 
 }

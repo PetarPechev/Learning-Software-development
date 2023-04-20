@@ -1,6 +1,8 @@
 package com.company.oop.agency.core;
 
 import com.company.oop.agency.exceptions.ElementNotFoundException;
+import com.company.oop.agency.models.JourneyImpl;
+import com.company.oop.agency.models.TicketImpl;
 import com.company.oop.agency.models.contracts.Journey;
 import com.company.oop.agency.models.contracts.Ticket;
 import com.company.oop.agency.models.vehicles.AirplaneImpl;
@@ -53,14 +55,24 @@ public class AgencyRepositoryImpl implements AgencyRepository {
 
     @Override
     public Journey findJourneyById(int id) {
+        for (Journey journey : getJourneys()) {
+            if (journey.getId() == id) {
+                return journey;
+            }
+        }
 
-        throw new UnsupportedOperationException("Not implemented yet.");
+        throw new ElementNotFoundException(String.format("No record with ID %d", id));
     }
 
     @Override
     public Ticket findTicketById(int id) {
+        for (Ticket ticket : getTickets()) {
+            if (ticket.getId() == id) {
+                return ticket;
+            }
+        }
 
-        throw new UnsupportedOperationException("Not implemented yet.");
+        throw new ElementNotFoundException(String.format("No record with ID %d", id));
     }
 
     @Override
@@ -86,12 +98,16 @@ public class AgencyRepositoryImpl implements AgencyRepository {
 
     @Override
     public Journey createJourney(String startLocation, String destination, int distance, Vehicle vehicle) {
-        throw new UnsupportedOperationException("Not implemented yet.");
+        Journey journey = new JourneyImpl(++nextId, startLocation, destination, distance, vehicle);
+        this.journeys.add(journey);
+        return journey;
     }
 
     @Override
-    public Ticket createTicket(Journey journey, double costs) {
-        throw new UnsupportedOperationException("Not implemented yet.");
+    public Ticket createTicket(Journey journey, double administrativeCosts) {
+        Ticket ticket = new TicketImpl(++nextId, journey, administrativeCosts);
+        this.tickets.add(ticket);
+        return ticket;
     }
 
     // Advanced task: Implement the following generic method that looks for an item by id.

@@ -4,7 +4,6 @@ import com.company.oop.agency.commands.contracts.Command;
 import com.company.oop.agency.core.contracts.AgencyRepository;
 import com.company.oop.agency.models.contracts.Journey;
 import com.company.oop.agency.models.contracts.Ticket;
-import com.company.oop.agency.models.vehicles.contracts.Vehicle;
 import com.company.oop.agency.utils.ValidationHelper;
 
 import java.util.List;
@@ -22,7 +21,7 @@ public class CreateTicketCommand implements Command {
 
     private int journeyId;
 
-    private double costs;
+    private double administrativeCosts;
 
 
     public CreateTicketCommand(AgencyRepository agencyRepository) {
@@ -36,14 +35,14 @@ public class CreateTicketCommand implements Command {
         parseParameters(parameters);
 
         Journey journey = agencyRepository.findJourneyById(journeyId);
-        Ticket ticket = agencyRepository.createTicket(journey, costs);
+        Ticket ticket = agencyRepository.createTicket(journey, administrativeCosts);
 
         return String.format(TICKET_CREATED_MESSAGE, ticket.getId());
     }
 
     private void parseParameters(List<String> parameters) {
         journeyId = tryParseInteger(parameters.get(0), "journey ID");
-        costs = tryParseDouble(parameters.get(1), "administrative costs");
+        administrativeCosts = tryParseDouble(parameters.get(1), "administrative costs");
     }
 
 }
