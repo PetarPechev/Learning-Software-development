@@ -9,6 +9,7 @@ import com.company.oop.agency.utils.ValidationHelper;
 
 import java.util.List;
 
+import static com.company.oop.agency.utils.ParsingHelpers.tryParseDouble;
 import static com.company.oop.agency.utils.ParsingHelpers.tryParseInteger;
 
 public class CreateTicketCommand implements Command {
@@ -17,31 +18,32 @@ public class CreateTicketCommand implements Command {
 
     private static final String TICKET_CREATED_MESSAGE = "Ticket with ID %d was created.";
 
-    private final AgencyRepository repository;
+    private final AgencyRepository agencyRepository;
 
-    private int distance;
     private int journeyId;
 
-    private double administrativeCosts;
+    private double costs;
+
 
     public CreateTicketCommand(AgencyRepository agencyRepository) {
-        this.repository = agencyRepository;
+        this.agencyRepository = agencyRepository;
     }
 
+   @Override
     public String execute(List<String> parameters) {
         ValidationHelper.validateArgumentsCount(parameters, EXPECTED_NUMBER_OF_ARGUMENTS);
 
         parseParameters(parameters);
 
-        Journey journey = repository.findJourneyById(journeyId);
-        Ticket ticket = repository.createTicket(journey, administrativeCosts);
+        Journey journey = agencyRepository.findJourneyById(journeyId);
+        Ticket ticket = agencyRepository.createTicket(journey, costs);
 
-        return String.format(TICKET_CREATED_MESSAGE, journey.getId());
+        return String.format(TICKET_CREATED_MESSAGE, ticket.getId());
     }
 
     private void parseParameters(List<String> parameters) {
-        distance = tryParseInteger(parameters.get(2), "distance");
-        journeyId = tryParseInteger(parameters.get(3), "journey id");
+        journeyId = tryParseInteger(parameters.get(0), "journey ID");
+        costs = tryParseDouble(parameters.get(1), "administrative costs");
     }
 
 }

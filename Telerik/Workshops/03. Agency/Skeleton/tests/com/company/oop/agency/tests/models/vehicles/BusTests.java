@@ -8,6 +8,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertAll;
 
+import static org.junit.jupiter.api.Assertions.*;
+
+
 public class BusTests {
 
     public static final double PRICE_MIN_VALUE = 0.1;

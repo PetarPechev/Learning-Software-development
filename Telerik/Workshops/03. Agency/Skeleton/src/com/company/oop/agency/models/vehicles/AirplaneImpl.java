@@ -39,4 +39,5 @@ public class AirplaneImpl extends VehicleImpl implements Airplane {
                 super.toString() + System.lineSeparator() +
                 "Has free food: " + hasFreeFood;
     }
+
 }
