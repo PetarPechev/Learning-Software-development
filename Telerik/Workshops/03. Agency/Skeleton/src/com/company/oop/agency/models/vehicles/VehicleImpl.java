@@ -50,6 +50,13 @@ public abstract class VehicleImpl implements Vehicle {
     }
 
     @Override
+    public String getAsString() {
+        return "Passenger capacity: " + passengerCapacity + System.lineSeparator() +
+                "Price per kilometer: " + pricePerKilometer + System.lineSeparator() +
+                "Vehicle type: " + vehicleType;
+    }
+
+    @Override
     public VehicleType getType() {
         return vehicleType;
     }

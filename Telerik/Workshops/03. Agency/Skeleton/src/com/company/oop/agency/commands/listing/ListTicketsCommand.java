@@ -15,12 +15,20 @@ public class ListTicketsCommand implements Command {
         tickets = agencyRepository.getTickets();
     }
 
-    public String execute(List<String> parameters) {
+/*    public String execute(List<String> parameters) {
         if (tickets.isEmpty()) {
             return "There are no registered tickets.";
         }
 
         return ListingHelpers.ticketsToString(tickets);
+    }*/
+
+    public String execute(List<String> parameters) {
+        if (tickets.isEmpty()) {
+            return "There are no registered tickets.";
+        }
+
+        return ListingHelpers.elementsToString(tickets);
     }
 
 }

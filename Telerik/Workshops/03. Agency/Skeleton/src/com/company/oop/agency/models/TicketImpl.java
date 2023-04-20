@@ -45,12 +45,11 @@ public class TicketImpl implements Ticket {
         return id;
     }
 
-    @Override
-    public String toString() {
 
+    @Override
+    public String getAsString() {
         return "Ticket ----" + System.lineSeparator() +
                 "Destination: " + journey.getDestination() + System.lineSeparator() +
                 "Price: " + calculatePrice();
     }
-
 }

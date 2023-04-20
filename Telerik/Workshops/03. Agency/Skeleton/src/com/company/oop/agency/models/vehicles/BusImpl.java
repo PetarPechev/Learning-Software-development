@@ -20,9 +20,9 @@ public class BusImpl extends VehicleImpl implements Bus {
         ValidationHelper.validatePassengerCapacity(passengerCapacity, PASSENGER_MIN_VALUE, PASSENGER_MAX_VALUE, "bus");
     }
 
-    @Override
-    public String toString() {
 
+    @Override
+    public String getAsString() {
         return "Bus ---" + System.lineSeparator() +
                 super.toString();
     }

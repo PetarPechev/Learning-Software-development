@@ -90,8 +90,7 @@ public class JourneyImpl implements Journey {
     }
 
     @Override
-    public String toString() {
-
+    public String getAsString() {
         return "Journey ----" + System.lineSeparator() +
                 "Start location: " + startLocation + System.lineSeparator() +
                 "Destination: " + destination + System.lineSeparator() +
@@ -99,4 +98,5 @@ public class JourneyImpl implements Journey {
                 "Vehicle type: " + vehicle + System.lineSeparator() +
                 "Travel costs: " + calculateTravelCosts();
     }
+
 }
