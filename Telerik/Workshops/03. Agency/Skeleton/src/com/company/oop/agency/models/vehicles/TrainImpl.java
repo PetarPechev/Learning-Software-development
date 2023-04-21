@@ -42,7 +42,6 @@ public class TrainImpl extends VehicleImpl implements Train {
     }
 
 
-
     @Override
     public String getAsString() {
         return this.toString();

@@ -10,10 +10,10 @@ import java.util.List;
 
 public class ListVehiclesCommand implements Command {
     private final List<Vehicle> vehicles;
+
     public ListVehiclesCommand(AgencyRepository agencyRepository) {
         vehicles = agencyRepository.getVehicles();
     }
-
 
 
     public String execute(List<String> parameters) {

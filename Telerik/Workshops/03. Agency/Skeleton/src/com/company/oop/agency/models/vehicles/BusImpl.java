@@ -27,7 +27,7 @@ public class BusImpl extends VehicleImpl implements Bus {
 
     @Override
     public String toString() {
-       return "Bus ----" + System.lineSeparator() +
+        return "Bus ----" + System.lineSeparator() +
                 super.toString();
     }
 

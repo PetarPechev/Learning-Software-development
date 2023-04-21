@@ -2,7 +2,7 @@ package com.company.oop.agency.models.contracts;
 
 import com.company.oop.agency.models.vehicles.contracts.Vehicle;
 
-public interface Journey extends Identifiable, Printable{
+public interface Journey extends Identifiable, Printable {
 
     int getDistance();
 
@@ -13,6 +13,7 @@ public interface Journey extends Identifiable, Printable{
     String getDestination();
 
     double calculateTravelCosts();
+
     int getId();
 
 }

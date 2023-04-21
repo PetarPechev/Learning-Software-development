@@ -25,7 +25,7 @@ public class ParsingHelpers {
 
     public static boolean tryParseBoolean(String valueToParse, String parameterName) {
         if (!valueToParse.equalsIgnoreCase("true") &&
-            !valueToParse.equalsIgnoreCase("false")) {
+                !valueToParse.equalsIgnoreCase("false")) {
             throw new InvalidUserInputException(String.format(INVALID_BOOLEAN_FIELD_MESSAGE, parameterName));
         }
 

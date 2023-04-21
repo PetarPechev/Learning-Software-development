@@ -12,7 +12,7 @@ import static com.company.oop.agency.utils.ParsingHelpers.tryParseInteger;
 
 public class CreateJourneyCommand implements Command {
 
-    public static final int EXPECTED_NUMBER_OF_ARGUMENTS = 4;
+    private static final int EXPECTED_NUMBER_OF_ARGUMENTS = 4;
     private static final String JOURNEY_CREATED_MESSAGE = "Journey with ID %d was created.";
 
     private final AgencyRepository repository;
@@ -30,7 +30,7 @@ public class CreateJourneyCommand implements Command {
         validateArguments(parameters);
         parseParameters(parameters);
 
-        Vehicle vehicle = repository.findElementById(repository.getVehicles(),vehicleId);
+        Vehicle vehicle = repository.findElementById(repository.getVehicles(), vehicleId);
         Journey journey = repository.createJourney(startLocation, destination, distance, vehicle);
 
         return String.format(JOURNEY_CREATED_MESSAGE, journey.getId());

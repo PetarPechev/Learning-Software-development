@@ -20,7 +20,10 @@ public class ListingHelpers {
         return String.join(System.lineSeparator() + CommandsConstants.JOIN_DELIMITER + System.lineSeparator(), result).trim();
     }
 
-/*    public static String ticketsToString(List<Ticket> tickets) {
+
+    // Methods below are not used anymore,
+    // because we implemented the above Generic method - this is part of Advanced Tasks!
+    public static String ticketsToString(List<Ticket> tickets) {
         List<String> result = new ArrayList<>();
         for (Ticket ticket : tickets) {
             result.add(ticket.toString());
@@ -45,8 +48,7 @@ public class ListingHelpers {
         }
 
         return String.join(System.lineSeparator() + CommandsConstants.JOIN_DELIMITER + System.lineSeparator(), result).trim();
-    }*/
-
+    }
 
 
 }

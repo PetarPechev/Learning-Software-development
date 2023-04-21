@@ -105,7 +105,6 @@ public class AgencyRepositoryImpl implements AgencyRepository {
     }
 
 
-
     @Override
     public Ticket createTicket(Journey journey, double administrativeCosts) {
         Ticket ticket = new TicketImpl(++nextId, journey, administrativeCosts);

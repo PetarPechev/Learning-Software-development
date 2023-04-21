@@ -13,7 +13,7 @@ import static com.company.oop.agency.utils.ParsingHelpers.tryParseInteger;
 
 public class CreateTicketCommand implements Command {
 
-    public static final int EXPECTED_NUMBER_OF_ARGUMENTS = 2;
+    private static final int EXPECTED_NUMBER_OF_ARGUMENTS = 2;
 
     private static final String TICKET_CREATED_MESSAGE = "Ticket with ID %d was created.";
 
@@ -28,7 +28,7 @@ public class CreateTicketCommand implements Command {
         this.agencyRepository = agencyRepository;
     }
 
-   @Override
+    @Override
     public String execute(List<String> parameters) {
         validateArguments(parameters);
         parseParameters(parameters);

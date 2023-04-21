@@ -21,8 +21,7 @@ public class ValidationHelper {
         }
     }
 
-    public static void validateStringLength(String stringToValidate, int minLength, int maxLength, String type)
-    {
+    public static void validateStringLength(String stringToValidate, int minLength, int maxLength, String type) {
         String errorMessage = String.format("The %s %s", type, STRING_LENGTH_ERROR);
 
         validateValueInRange(stringToValidate.length(), minLength, maxLength, errorMessage);
@@ -33,6 +32,7 @@ public class ValidationHelper {
             throw new IllegalArgumentException(String.format(INVALID_NUMBER_OF_ARGUMENTS, expectedArgumentsCount, list.size()));
         }
     }
+
 
     public static void validateCartsNumber(int cartsNumber, int min, int max) {
         validateValueInRange(cartsNumber, min, max, INVALID_CARTS_NUMBER);

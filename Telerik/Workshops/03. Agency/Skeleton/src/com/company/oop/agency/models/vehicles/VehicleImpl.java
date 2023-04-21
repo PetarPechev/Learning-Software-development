@@ -62,7 +62,7 @@ public abstract class VehicleImpl implements Vehicle {
         ValidationHelper.validatePassengerCapacity(passengerCapacity, PASSENGER_MIN_VALUE, PASSENGER_MAX_VALUE, "vehicle");
     }
 
-    protected void validatePricePerKilometer(double pricePerKilometer) {
+    private void validatePricePerKilometer(double pricePerKilometer) {
         ValidationHelper.validatePricePerKilometer(pricePerKilometer, PRICE_MIN_VALUE, PRICE_MAX_VALUE, "vehicle");
     }
 

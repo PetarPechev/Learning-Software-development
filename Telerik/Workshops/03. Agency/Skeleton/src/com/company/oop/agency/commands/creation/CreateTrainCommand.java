@@ -14,7 +14,7 @@ import static com.company.oop.agency.utils.ParsingHelpers.tryParseInteger;
 
 public class CreateTrainCommand implements Command {
 
-    public static final int EXPECTED_NUMBER_OF_ARGUMENTS = 3;
+    private static final int EXPECTED_NUMBER_OF_ARGUMENTS = 3;
 
     private final AgencyRepository agencyRepository;
 

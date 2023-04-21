@@ -12,8 +12,7 @@ import static com.company.oop.agency.utils.ParsingHelpers.*;
 
 public class CreateAirplaneCommand implements Command {
 
-    public static final int EXPECTED_NUMBER_OF_ARGUMENTS = 3;
-
+    private static final int EXPECTED_NUMBER_OF_ARGUMENTS = 3;
     private final AgencyRepository agencyRepository;
 
     private boolean hasFreeFood;
@@ -23,7 +22,6 @@ public class CreateAirplaneCommand implements Command {
     public CreateAirplaneCommand(AgencyRepository agencyRepository) {
         this.agencyRepository = agencyRepository;
     }
-
 
 
     @Override

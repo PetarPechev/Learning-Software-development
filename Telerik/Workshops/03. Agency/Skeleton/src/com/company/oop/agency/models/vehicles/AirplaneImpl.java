@@ -34,6 +34,7 @@ public class AirplaneImpl extends VehicleImpl implements Airplane {
         return this.toString();
     }
 
+
     public String toString() {
         return "Airplane ----" + System.lineSeparator() +
                 super.toString() + System.lineSeparator() +
