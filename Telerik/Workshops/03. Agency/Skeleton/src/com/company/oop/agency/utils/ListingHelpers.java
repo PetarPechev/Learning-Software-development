@@ -13,6 +13,7 @@ public class ListingHelpers {
 
     public static <T extends Printable> String elementsToString(List<T> elements) {
         List<String> result = new ArrayList<>();
+
         for (T element : elements) {
             result.add(element.toString());
         }
@@ -25,6 +26,7 @@ public class ListingHelpers {
     // because we implemented the above Generic method - this is part of Advanced Tasks!
     public static String ticketsToString(List<Ticket> tickets) {
         List<String> result = new ArrayList<>();
+
         for (Ticket ticket : tickets) {
             result.add(ticket.toString());
         }
@@ -34,6 +36,7 @@ public class ListingHelpers {
 
     public static String vehiclesToString(List<Vehicle> vehicles) {
         List<String> result = new ArrayList<>();
+
         for (Vehicle vehicle : vehicles) {
             result.add(vehicle.toString());
         }
@@ -43,6 +46,7 @@ public class ListingHelpers {
 
     public static String journeysToString(List<Journey> journeys) {
         List<String> result = new ArrayList<>();
+
         for (Journey journey : journeys) {
             result.add(journey.toString());
         }
