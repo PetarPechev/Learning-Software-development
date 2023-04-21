@@ -68,9 +68,7 @@ public abstract class VehicleImpl implements Vehicle {
 
     @Override
     public String getAsString() {
-        return String.format("Passenger capacity: %d%n", passengerCapacity) +
-                String.format("Price per kilometer: %.2f%n", pricePerKilometer) +
-                String.format("Vehicle type: %s", vehicleType);
+        return this.toString();
     }
 
 

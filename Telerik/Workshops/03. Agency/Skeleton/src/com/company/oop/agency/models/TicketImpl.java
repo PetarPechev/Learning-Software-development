@@ -48,9 +48,7 @@ public class TicketImpl implements Ticket {
 
     @Override
     public String getAsString() {
-        return "Ticket ----" + System.lineSeparator() +
-                "Destination: " + journey.getDestination() + System.lineSeparator() +
-                String.format("Price: %.2f", calculatePrice());
+        return this.toString();
     }
 
     @Override

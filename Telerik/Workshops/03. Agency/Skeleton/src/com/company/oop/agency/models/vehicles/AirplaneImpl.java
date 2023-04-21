@@ -31,9 +31,7 @@ public class AirplaneImpl extends VehicleImpl implements Airplane {
 
     @Override
     public String getAsString() {
-        return "Airplane ----" + System.lineSeparator() +
-                super.toString() + System.lineSeparator() +
-                String.format("Has free food: %s", hasFreeFood);
+        return this.toString();
     }
 
     public String toString() {

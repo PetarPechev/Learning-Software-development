@@ -93,12 +93,7 @@ public class JourneyImpl implements Journey {
 
     @Override
     public String getAsString() {
-        return "Journey ----" + System.lineSeparator() +
-                "Start location: " + startLocation + System.lineSeparator() +
-                "Destination: " + destination + System.lineSeparator() +
-                "Distance: " + distance + System.lineSeparator() +
-                "Vehicle type: " + getVehicle().getType() + System.lineSeparator() +
-                String.format("Travel costs: %.2f", calculateTravelCosts());
+        return this.toString();
     }
 
     @Override
