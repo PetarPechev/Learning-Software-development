@@ -9,11 +9,13 @@ public class TicketImpl implements Ticket {
     private final Journey journey;
     private double administrativeCosts;
 
+
     public TicketImpl(int id, Journey journey, double administrativeCosts) {
         this.id = id;
         this.journey = journey;
         setAdministrativeCosts(administrativeCosts);
     }
+
 
     private void setAdministrativeCosts(double administrativeCosts) {
         validateAdministrativeCosts(administrativeCosts);

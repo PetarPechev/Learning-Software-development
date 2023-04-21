@@ -16,6 +16,7 @@ public abstract class VehicleImpl implements Vehicle {
     private final VehicleType vehicleType;
     private double pricePerKilometer;
 
+
     protected VehicleImpl(int id, int passengerCapacity, VehicleType vehicleType, double pricePerKilometer) {
         this.id = id;
         setPassengerCapacity(passengerCapacity);
@@ -23,11 +24,13 @@ public abstract class VehicleImpl implements Vehicle {
         setPricePerKilometer(pricePerKilometer);
     }
 
+
     private void setPricePerKilometer(double pricePerKilometer) {
         validatePricePerKilometer(pricePerKilometer);
 
         this.pricePerKilometer = pricePerKilometer;
     }
+
 
     @Override
     public double getPricePerKilometer() {

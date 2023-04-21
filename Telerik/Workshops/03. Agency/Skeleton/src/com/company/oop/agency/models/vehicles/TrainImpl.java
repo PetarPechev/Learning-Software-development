@@ -20,6 +20,7 @@ public class TrainImpl extends VehicleImpl implements Train {
         setCarts(carts);
     }
 
+
     private void setCarts(int carts) {
         validateCarts(carts);
 

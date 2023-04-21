@@ -29,6 +29,7 @@ public class JourneyImpl implements Journey {
         this.vehicle = vehicle;
     }
 
+
     private void setStartLocation(String startLocation) {
         validateStartLocation(startLocation);
 
