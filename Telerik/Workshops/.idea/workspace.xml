@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cd4287d2-de8c-42f3-9360-eb5ef86f3057" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/01. Cosmetics/01. Cosmetics.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02. Cosmetics/02. Cosmetics.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/03. Agency.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/Startup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/commands/CommandsConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/commands/contracts/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/commands/creation/CreateAirplaneCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/commands/creation/CreateBusCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/commands/creation/CreateJourneyCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/commands/creation/CreateTicketCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/commands/creation/CreateTrainCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/commands/enums/CommandType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/commands/listing/ListJourneysCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/commands/listing/ListTicketsCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/commands/listing/ListVehiclesCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/core/AgencyEngineImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/core/AgencyRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/core/CommandFactoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/core/contracts/AgencyRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/core/contracts/CommandFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/core/contracts/Engine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/exceptions/ElementNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/exceptions/InvalidUserInputException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/models/JourneyImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/models/TicketImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/models/contracts/Identifiable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/models/contracts/Journey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/models/contracts/Printable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/models/contracts/Ticket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/models/vehicles/AirplaneImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/models/vehicles/BusImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/models/vehicles/TrainImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/models/vehicles/VehicleType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/models/vehicles/contracts/Airplane.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/models/vehicles/contracts/Bus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/models/vehicles/contracts/Train.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/models/vehicles/contracts/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/utils/ListingHelpers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/utils/ParsingHelpers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/src/com/company/oop/agency/utils/ValidationHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/tests/com/company/oop/agency/tests/commands/CreateAirplaneCommandTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/tests/com/company/oop/agency/tests/commands/CreateBusCommandTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/tests/com/company/oop/agency/tests/commands/CreateJourneyCommandTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/tests/com/company/oop/agency/tests/commands/CreateTicketCommandTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/tests/com/company/oop/agency/tests/commands/CreateTrainCommandTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/tests/com/company/oop/agency/tests/core/AgencyRepositoryTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/tests/com/company/oop/agency/tests/models/JourneyTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/tests/com/company/oop/agency/tests/models/TicketTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/tests/com/company/oop/agency/tests/models/vehicles/AirplaneTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/tests/com/company/oop/agency/tests/models/vehicles/BusTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/tests/com/company/oop/agency/tests/models/vehicles/TrainTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03. Agency/Skeleton/tests/com/company/oop/agency/tests/utils/TestUtilities.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="2OgsRZfSKudnUq3uWnJ5GStxnZr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/test",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cd4287d2-de8c-42f3-9360-eb5ef86f3057" name="Changes" comment="" />
+      <created>1681993552311</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681993552311</updated>
+      <workItem from="1681993555138" duration="3000" />
+    </task>
+    <servers />
+  </component>
+</project>
