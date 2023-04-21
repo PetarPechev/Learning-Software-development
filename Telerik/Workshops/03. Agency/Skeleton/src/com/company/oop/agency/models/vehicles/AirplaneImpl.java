@@ -10,6 +10,7 @@ public class AirplaneImpl extends VehicleImpl implements Airplane {
 
     public AirplaneImpl(int id, int passengerCapacity, double pricePerKilometer, boolean hasFreeFood) {
         super(id, passengerCapacity, VehicleType.AIR, pricePerKilometer);
+
         setHasFreeFood(hasFreeFood);
     }
 

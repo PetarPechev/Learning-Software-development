@@ -40,11 +40,13 @@ public class ValidationHelper {
 
     public static void validatePassengerCapacity(int passengerCapacity, int minimumCapacity, int maximumCapacity, String vehicleType) {
         String errorMessage = String.format("A %s %s", vehicleType, INVALID_PASSENGER_CAPACITY);
+
         validateValueInRange(passengerCapacity, minimumCapacity, maximumCapacity, errorMessage);
     }
 
     public static void validatePricePerKilometer(double pricePerKilometer, double minPricePerKil, double maxPricePerKil, String vehicleType) {
         String errorMessage = String.format("A %s %s", vehicleType, INVALID_PRICE_PER_KILOMETER);
+
         validateValueInRange(pricePerKilometer, minPricePerKil, maxPricePerKil, errorMessage);
     }
 

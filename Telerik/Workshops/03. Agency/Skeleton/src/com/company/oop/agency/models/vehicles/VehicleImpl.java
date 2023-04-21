@@ -19,8 +19,9 @@ public abstract class VehicleImpl implements Vehicle {
 
     protected VehicleImpl(int id, int passengerCapacity, VehicleType vehicleType, double pricePerKilometer) {
         this.id = id;
-        setPassengerCapacity(passengerCapacity);
         this.vehicleType = vehicleType;
+
+        setPassengerCapacity(passengerCapacity);
         setPricePerKilometer(pricePerKilometer);
     }
 
@@ -81,4 +82,6 @@ public abstract class VehicleImpl implements Vehicle {
                 String.format("Price per kilometer: %.2f%n", pricePerKilometer) +
                 String.format("Vehicle type: %s", vehicleType);
     }
+
+
 }

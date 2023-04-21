@@ -23,9 +23,6 @@ public class TicketImpl implements Ticket {
         this.administrativeCosts = administrativeCosts;
     }
 
-    private void validateAdministrativeCosts(double administrativeCosts) {
-        ValidationHelper.validateCosts(administrativeCosts);
-    }
 
     @Override
     public double getAdministrativeCosts() {
@@ -51,6 +48,10 @@ public class TicketImpl implements Ticket {
     @Override
     public String getAsString() {
         return this.toString();
+    }
+
+    private void validateAdministrativeCosts(double administrativeCosts) {
+        ValidationHelper.validateCosts(administrativeCosts);
     }
 
     @Override
