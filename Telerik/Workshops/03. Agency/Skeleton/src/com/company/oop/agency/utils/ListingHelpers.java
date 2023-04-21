@@ -11,7 +11,16 @@ import java.util.List;
 
 public class ListingHelpers {
 
-    public static String ticketsToString(List<Ticket> tickets) {
+    public static <T extends Printable> String elementsToString(List<T> elements) {
+        List<String> result = new ArrayList<>();
+        for (T element : elements) {
+            result.add(element.toString());
+        }
+
+        return String.join(System.lineSeparator() + CommandsConstants.JOIN_DELIMITER + System.lineSeparator(), result).trim();
+    }
+
+/*    public static String ticketsToString(List<Ticket> tickets) {
         List<String> result = new ArrayList<>();
         for (Ticket ticket : tickets) {
             result.add(ticket.toString());
@@ -36,15 +45,8 @@ public class ListingHelpers {
         }
 
         return String.join(System.lineSeparator() + CommandsConstants.JOIN_DELIMITER + System.lineSeparator(), result).trim();
-    }
+    }*/
 
-    public static <T extends Printable> String elementsToString(List<T> elements) {
-        List<String> result = new ArrayList<>();
-        for (T element : elements) {
-            result.add(element.toString());
-        }
 
-        return String.join(System.lineSeparator() + CommandsConstants.JOIN_DELIMITER + System.lineSeparator(), result).trim();
-    }
 
 }
