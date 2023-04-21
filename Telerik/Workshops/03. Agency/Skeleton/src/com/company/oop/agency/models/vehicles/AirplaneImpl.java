@@ -1,14 +1,10 @@
 package com.company.oop.agency.models.vehicles;
 
 import com.company.oop.agency.models.vehicles.contracts.Airplane;
+import com.company.oop.agency.models.vehicles.enums.VehicleType;
 import com.company.oop.agency.utils.ParsingHelpers;
 
 public class AirplaneImpl extends VehicleImpl implements Airplane {
-
-    public static final int PASSENGER_MIN_VALUE = 1;
-    public static final int PASSENGER_MAX_VALUE = 800;
-    public static final double PRICE_MIN_VALUE = 0.1;
-    public static final double PRICE_MAX_VALUE = 2.5;
 
     private boolean hasFreeFood;
 
@@ -35,8 +31,14 @@ public class AirplaneImpl extends VehicleImpl implements Airplane {
 
     @Override
     public String getAsString() {
-        return  "Airplane ----" + System.lineSeparator() +
-                super.getAsString() + System.lineSeparator() +
-                "Has free food: " + hasFreeFood;
+        return "Airplane ----" + System.lineSeparator() +
+                super.toString() + System.lineSeparator() +
+                String.format("Has free food: %s", hasFreeFood);
+    }
+
+    public String toString() {
+        return "Airplane ----" + System.lineSeparator() +
+                super.toString() + System.lineSeparator() +
+                String.format("Has free food: %s", hasFreeFood);
     }
 }

@@ -6,13 +6,13 @@ import java.util.List;
 
 public class ValidationHelper {
 
-    public static final String INVALID_NUMBER_OF_ARGUMENTS = "Invalid number of arguments. Expected: %d, Received: %d";
-    private static final String INVALID_PASSENGER_CAPACITY = "cannot have less than %d passengers or more than %d passengers.";
-    private static final String INVALID_CARTS_NUMBER = "A train cannot have less than %d cart or more than %d carts.";
-    private static final String STRING_LENGTH_ERROR = "The %s length cannot be less than %d or more than %d symbols long.";
-    private static final String INVALID_PRICE_PER_KILOMETER = "%s with a price per kilometer lower than $%.2f or higher than $%.2f cannot exist!";
-    private static final String INVALID_DISTANCE_NUMBER = "The Distance cannot be less than %d or more than %d kilometers.";
-    private static final String INVALID_COSTS_NUMBER = "Costs cannot be negative number.";
+    public static final String INVALID_NUMBER_OF_ARGUMENTS = "Invalid number of arguments. Expected: %0.f, Received: %0.f";
+    private static final String INVALID_PASSENGER_CAPACITY = "cannot have less than %.0f passengers or more than %.0f passengers.";
+    private static final String INVALID_CARTS_NUMBER = "A train cannot have less than %0.f cart or more than %0.f carts.";
+    private static final String STRING_LENGTH_ERROR = "length cannot be less than %.0f or more than %.0f symbols long.";
+    private static final String INVALID_PRICE_PER_KILOMETER = "with a price per kilometer lower than $%.2f or higher than $%.2f cannot exist!";
+    private static final String INVALID_DISTANCE_NUMBER = "The Distance cannot be less than %0.f or more than %0.f kilometers.";
+    private static final String INVALID_COSTS_NUMBER = "Value of 'costs' must be a positive number. Actual value:";
 
 
     public static void validateValueInRange(double value, double min, double max, String errorMessage) {
@@ -21,8 +21,10 @@ public class ValidationHelper {
         }
     }
 
-    public static void validateStringLength(String stringToValidate, int minLength, int maxLength, String type) {
+    public static void validateStringLength(String stringToValidate, int minLength, int maxLength, String type)
+    {
         String errorMessage = String.format("The %s %s", type, STRING_LENGTH_ERROR);
+
         validateValueInRange(stringToValidate.length(), minLength, maxLength, errorMessage);
     }
 
@@ -52,7 +54,7 @@ public class ValidationHelper {
 
     public static void validateCosts(double cost) {
         if (cost < 0.00) {
-            throw new InvalidUserInputException(INVALID_COSTS_NUMBER);
+            throw new InvalidUserInputException(String.format("%s %.2f.", INVALID_COSTS_NUMBER, cost));
         }
     }
 

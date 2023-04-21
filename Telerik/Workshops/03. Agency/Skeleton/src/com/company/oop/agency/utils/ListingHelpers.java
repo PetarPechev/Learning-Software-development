@@ -17,7 +17,7 @@ public class ListingHelpers {
             result.add(ticket.toString());
         }
 
-        return String.join(CommandsConstants.JOIN_DELIMITER + System.lineSeparator(), result).trim();
+        return String.join(System.lineSeparator() + CommandsConstants.JOIN_DELIMITER + System.lineSeparator(), result).trim();
     }
 
     public static String vehiclesToString(List<Vehicle> vehicles) {
@@ -26,7 +26,7 @@ public class ListingHelpers {
             result.add(vehicle.toString());
         }
 
-        return String.join(CommandsConstants.JOIN_DELIMITER + System.lineSeparator(), result).trim();
+        return String.join(System.lineSeparator() + CommandsConstants.JOIN_DELIMITER + System.lineSeparator(), result).trim();
     }
 
     public static String journeysToString(List<Journey> journeys) {
@@ -35,7 +35,7 @@ public class ListingHelpers {
             result.add(journey.toString());
         }
 
-        return String.join(CommandsConstants.JOIN_DELIMITER + System.lineSeparator(), result).trim();
+        return String.join(System.lineSeparator() + CommandsConstants.JOIN_DELIMITER + System.lineSeparator(), result).trim();
     }
 
     public static <T extends Printable> String elementsToString(List<T> elements) {
@@ -44,7 +44,7 @@ public class ListingHelpers {
             result.add(element.toString());
         }
 
-        return String.join(CommandsConstants.JOIN_DELIMITER + System.lineSeparator(), result).trim();
+        return String.join(System.lineSeparator() + CommandsConstants.JOIN_DELIMITER + System.lineSeparator(), result).trim();
     }
 
 }

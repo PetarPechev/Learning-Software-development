@@ -26,16 +26,6 @@ public class TicketImpl implements Ticket {
     }
 
     @Override
-    public Journey getJourney() {
-        return journey;
-    }
-
-    @Override
-    public double calculatePrice() {
-        return administrativeCosts * journey.calculateTravelCosts();
-    }
-
-    @Override
     public double getAdministrativeCosts() {
         return administrativeCosts;
     }
@@ -45,11 +35,28 @@ public class TicketImpl implements Ticket {
         return id;
     }
 
+    @Override
+    public Journey getJourney() {
+        return journey;
+    }
+
+    @Override
+    public double calculatePrice() {
+        return administrativeCosts * journey.calculateTravelCosts();
+    }
+
 
     @Override
     public String getAsString() {
         return "Ticket ----" + System.lineSeparator() +
                 "Destination: " + journey.getDestination() + System.lineSeparator() +
-                "Price: " + calculatePrice();
+                String.format("Price: %.2f", calculatePrice());
+    }
+
+    @Override
+    public String toString() {
+        return "Ticket ----" + System.lineSeparator() +
+                "Destination: " + journey.getDestination() + System.lineSeparator() +
+                String.format("Price: %.2f", calculatePrice());
     }
 }

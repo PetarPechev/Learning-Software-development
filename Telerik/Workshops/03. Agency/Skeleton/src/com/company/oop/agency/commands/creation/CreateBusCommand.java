@@ -27,13 +27,16 @@ public class CreateBusCommand implements Command {
 
     @Override
     public String execute(List<String> parameters) {
-        ValidationHelper.validateArgumentsCount(parameters, EXPECTED_NUMBER_OF_ARGUMENTS);
-
+        validateArguments(parameters);
         parseParameters(parameters);
 
         Vehicle createdBus = agencyRepository.createBus(passengerCapacity, pricePerKilometer);
 
         return String.format(VEHICLE_CREATED_MESSAGE, createdBus.getId());
+    }
+
+    private void validateArguments(List<String> parameters) {
+        ValidationHelper.validateArgumentsCount(parameters, EXPECTED_NUMBER_OF_ARGUMENTS);
     }
 
     private void parseParameters(List<String> parameters) {

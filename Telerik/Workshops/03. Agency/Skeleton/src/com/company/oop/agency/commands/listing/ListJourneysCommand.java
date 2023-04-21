@@ -16,14 +16,6 @@ public class ListJourneysCommand implements Command {
         journeys = agencyRepository.getJourneys();
     }
 
-/*    public String execute(List<String> parameters) {
-        if (journeys.isEmpty()) {
-            return "There are no registered journeys.";
-        }
-
-        return ListingHelpers.journeysToString(journeys);
-    }*/
-
     public String execute(List<String> parameters) {
         if (journeys.isEmpty()) {
             return "There are no registered journeys.";

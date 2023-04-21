@@ -16,14 +16,6 @@ public class ListVehiclesCommand implements Command {
 
 
 
-/*    public String execute(List<String> parameters) {
-        if (vehicles.isEmpty()) {
-            return "There are no registered tickets.";
-        }
-
-        return ListingHelpers.vehiclesToString(vehicles);
-    }*/
-
     public String execute(List<String> parameters) {
         if (vehicles.isEmpty()) {
             return "There are no registered tickets.";
@@ -31,4 +23,5 @@ public class ListVehiclesCommand implements Command {
 
         return ListingHelpers.elementsToString(vehicles);
     }
+
 }

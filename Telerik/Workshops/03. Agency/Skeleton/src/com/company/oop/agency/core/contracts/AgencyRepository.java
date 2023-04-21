@@ -1,5 +1,7 @@
 package com.company.oop.agency.core.contracts;
 
+import com.company.oop.agency.exceptions.ElementNotFoundException;
+import com.company.oop.agency.models.contracts.Identifiable;
 import com.company.oop.agency.models.contracts.Journey;
 import com.company.oop.agency.models.contracts.Ticket;
 import com.company.oop.agency.models.vehicles.contracts.Train;
@@ -30,5 +32,7 @@ public interface AgencyRepository {
     Vehicle createAirplane(int passengerCapacity, double pricePerKilometer, boolean hasFreeFood);
 
     Journey createJourney(String startLocation, String destination, int distance, Vehicle vehicle);
+
+    <T extends Identifiable> T findElementById(List<T> elements, int id);
 
 }

@@ -30,19 +30,22 @@ public class CreateTicketCommand implements Command {
 
    @Override
     public String execute(List<String> parameters) {
-        ValidationHelper.validateArgumentsCount(parameters, EXPECTED_NUMBER_OF_ARGUMENTS);
-
+        validateArguments(parameters);
         parseParameters(parameters);
 
-        Journey journey = agencyRepository.findJourneyById(journeyId);
+        Journey journey = agencyRepository.findElementById(agencyRepository.getJourneys(), journeyId);
         Ticket ticket = agencyRepository.createTicket(journey, administrativeCosts);
 
         return String.format(TICKET_CREATED_MESSAGE, ticket.getId());
     }
 
+    private void validateArguments(List<String> parameters) {
+        ValidationHelper.validateArgumentsCount(parameters, EXPECTED_NUMBER_OF_ARGUMENTS);
+    }
+
     private void parseParameters(List<String> parameters) {
-        journeyId = tryParseInteger(parameters.get(0), "journey ID");
-        administrativeCosts = tryParseDouble(parameters.get(1), "administrative costs");
+        journeyId = tryParseInteger(parameters.get(0), "journey id");
+        administrativeCosts = tryParseDouble(parameters.get(1), "cost");
     }
 
 }

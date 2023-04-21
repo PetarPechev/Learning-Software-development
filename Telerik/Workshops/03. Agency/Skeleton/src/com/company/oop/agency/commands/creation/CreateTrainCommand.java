@@ -27,13 +27,16 @@ public class CreateTrainCommand implements Command {
     }
 
     public String execute(List<String> parameters) {
-        ValidationHelper.validateArgumentsCount(parameters, EXPECTED_NUMBER_OF_ARGUMENTS);
-
+        validateArguments(parameters);
         parseParameters(parameters);
 
         Vehicle createdTrain = agencyRepository.createTrain(passengerCapacity, pricePerKilometer, cartsCount);
 
         return String.format(VEHICLE_CREATED_MESSAGE, createdTrain.getId());
+    }
+
+    private void validateArguments(List<String> parameters) {
+        ValidationHelper.validateArgumentsCount(parameters, EXPECTED_NUMBER_OF_ARGUMENTS);
     }
 
     private void parseParameters(List<String> parameters) {
