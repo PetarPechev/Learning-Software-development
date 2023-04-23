@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ab2df1f-7e59-4104-ac2e-2ff090e54e24" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Exception Hadnling/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Exception Hadnling/Skeleton/src/com/company/oop/cosmetics/utils/ValidationHelpers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../In class activity/Exception Hadnling/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../In class activity/Exception Hadnling/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../In class activity/Exception Hadnling/Skeleton/src/com/company/oop/cosmetics/models/CategoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../In class activity/Exception Hadnling/Skeleton/src/com/company/oop/cosmetics/models/CategoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/src/com/company/oop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/src/com/company/oop/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/src/com/company/oop/MyListImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/src/com/company/oop/MyListImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Skeleton/src/com/company/oop/agency/models/JourneyImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Skeleton/src/com/company/oop/agency/models/JourneyImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Skeleton/src/com/company/oop/agency/models/vehicles/AirplaneImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Skeleton/src/com/company/oop/agency/models/vehicles/AirplaneImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Skeleton/src/com/company/oop/agency/models/vehicles/BusImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Skeleton/src/com/company/oop/agency/models/vehicles/BusImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Skeleton/src/com/company/oop/agency/models/vehicles/TrainImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Skeleton/src/com/company/oop/agency/models/vehicles/TrainImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Skeleton/src/com/company/oop/agency/models/vehicles/VehicleImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Skeleton/src/com/company/oop/agency/models/vehicles/VehicleImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +41,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/test&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -151,6 +141,8 @@
       <workItem from="1682078809205" duration="3851000" />
       <workItem from="1682173719738" duration="411000" />
       <workItem from="1682198550106" duration="1609000" />
+      <workItem from="1682215450579" duration="2868000" />
+      <workItem from="1682276237406" duration="1000" />
     </task>
     <task id="LOCAL-00001" summary="change workshop 3">
       <created>1681993606981</created>
@@ -236,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682075938435</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="change workshop">
+      <created>1682215461000</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1682215461000</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
