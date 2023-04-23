@@ -117,7 +117,12 @@ public class MyListImpl<T> implements MyList<T> {
 
     @Override
     public void clear() {
-        Arrays.fill(data, null);
+        //Arrays.fill(data, null);
+
+        for (int i = 0; i < size; i++) {
+            data[i] = null;
+        }
+
         size = 0;
     }
 

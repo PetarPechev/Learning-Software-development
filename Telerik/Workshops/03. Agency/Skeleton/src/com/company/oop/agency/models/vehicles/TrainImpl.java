@@ -28,12 +28,17 @@ public class TrainImpl extends VehicleImpl implements Train {
     }
 
     private void validateCarts(int carts) {
-        ValidationHelper.validateCartsNumber(carts, CARTS_MIN_VALUE, CARTS_MAX_VALUE);
+        ValidationHelper.validateCartsNumber(carts,
+                CARTS_MIN_VALUE,
+                CARTS_MAX_VALUE);
     }
 
     @Override
     protected void validatePassengerCapacity(int passengerCapacity) {
-        ValidationHelper.validatePassengerCapacity(passengerCapacity, PASSENGER_MIN_VALUE, PASSENGER_MAX_VALUE, "train");
+        ValidationHelper.validatePassengerCapacity(passengerCapacity,
+                PASSENGER_MIN_VALUE,
+                PASSENGER_MAX_VALUE,
+                "train");
     }
 
 

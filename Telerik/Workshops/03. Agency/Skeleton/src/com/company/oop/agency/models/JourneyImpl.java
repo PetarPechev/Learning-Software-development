@@ -64,15 +64,23 @@ public class JourneyImpl implements Journey {
     }
 
     private void validateStartLocation(String startLocation) {
-        ValidationHelper.validateStringLength(startLocation, START_LOCATION_MIN_LENGTH, START_LOCATION_MAX_LENGTH, "StartingLocation's");
+        ValidationHelper.validateStringLength(startLocation,
+                START_LOCATION_MIN_LENGTH,
+                START_LOCATION_MAX_LENGTH,
+                "StartingLocation's");
     }
 
     private void validateDestination(String destination) {
-        ValidationHelper.validateStringLength(destination, DESTINATION_MIN_LENGTH, DESTINATION_MAX_LENGTH, "Destination's");
+        ValidationHelper.validateStringLength(destination,
+                DESTINATION_MIN_LENGTH,
+                DESTINATION_MAX_LENGTH,
+                "Destination's");
     }
 
     private void validateDistance(int distance) {
-        ValidationHelper.validateDistance(distance, DISTANCE_MIN_VALUE, DISTANCE_MAX_VALUE);
+        ValidationHelper.validateDistance(distance,
+                DISTANCE_MIN_VALUE,
+                DISTANCE_MAX_VALUE);
     }
 
 

@@ -5,38 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ab2df1f-7e59-4104-ac2e-2ff090e54e24" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/Generics.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/Skeleton.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/lib/apiguardian-api-1.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/lib/junit-jupiter-5.4.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/lib/junit-jupiter-api-5.4.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/lib/junit-jupiter-engine-5.4.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/lib/junit-jupiter-params-5.4.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/lib/junit-platform-commons-1.4.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/lib/junit-platform-engine-1.4.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/lib/opentest4j-1.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/src/com/company/oop/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/src/com/company/oop/MyList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/src/com/company/oop/MyListImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/test/com/company/oop/tests/MyListImplTests/AddTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/test/com/company/oop/tests/MyListImplTests/ContainsTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/test/com/company/oop/tests/MyListImplTests/IndexOfTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/test/com/company/oop/tests/MyListImplTests/LastIndexOfTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/test/com/company/oop/tests/MyListImplTests/RemoveAtTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/test/com/company/oop/tests/MyListImplTests/RemoveTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/test/com/company/oop/tests/MyListImplTests/SwapTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Exception Hadnling/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Exception Hadnling/Skeleton/src/com/company/oop/cosmetics/utils/ValidationHelpers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/Exception Hadnling/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../In class activity/Exception Hadnling/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/Exception Hadnling/Skeleton/src/com/company/oop/cosmetics/models/CategoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../In class activity/Exception Hadnling/Skeleton/src/com/company/oop/cosmetics/models/CategoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/src/com/company/oop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/src/com/company/oop/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/src/com/company/oop/MyListImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../In class activity/Generics/Skeleton/src/com/company/oop/MyListImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Skeleton/src/com/company/oop/agency/models/JourneyImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Skeleton/src/com/company/oop/agency/models/JourneyImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Skeleton/src/com/company/oop/agency/models/vehicles/AirplaneImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Skeleton/src/com/company/oop/agency/models/vehicles/AirplaneImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Skeleton/src/com/company/oop/agency/models/vehicles/BusImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Skeleton/src/com/company/oop/agency/models/vehicles/BusImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Skeleton/src/com/company/oop/agency/models/vehicles/TrainImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Skeleton/src/com/company/oop/agency/models/vehicles/TrainImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Skeleton/src/com/company/oop/agency/models/vehicles/VehicleImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Skeleton/src/com/company/oop/agency/models/vehicles/VehicleImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +148,9 @@
       <updated>1681993587183</updated>
       <workItem from="1681993590072" duration="55289000" />
       <workItem from="1682068944114" duration="6747000" />
-      <workItem from="1682078809205" duration="1957000" />
+      <workItem from="1682078809205" duration="3851000" />
+      <workItem from="1682173719738" duration="411000" />
+      <workItem from="1682198550106" duration="1609000" />
     </task>
     <task id="LOCAL-00001" summary="change workshop 3">
       <created>1681993606981</created>

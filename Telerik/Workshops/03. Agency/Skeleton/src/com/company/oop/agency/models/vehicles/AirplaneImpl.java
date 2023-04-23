@@ -21,7 +21,8 @@ public class AirplaneImpl extends VehicleImpl implements Airplane {
     }
 
     private void validateFreeFoodInput(boolean hasFreeFood) {
-        ParsingHelpers.tryParseBoolean(String.valueOf(hasFreeFood), String.valueOf(hasFreeFood));
+        ParsingHelpers.tryParseBoolean(String.valueOf(hasFreeFood),
+                String.valueOf(hasFreeFood));
     }
 
     @Override
