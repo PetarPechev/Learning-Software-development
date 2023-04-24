@@ -5,24 +5,84 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ab2df1f-7e59-4104-ac2e-2ff090e54e24" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/exceptions/InvalidUserInputException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/utils/ParsingHelpers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/utils/ValidationHelpers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/commands/AddProductToCategoryCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/commands/AddProductToCategoryCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/commands/CreateCategoryCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/commands/CreateCategoryCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/commands/CreateProductCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/commands/CreateProductCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/commands/ShowCategoryCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/commands/ShowCategoryCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/core/CommandFactoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/core/CommandFactoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/core/ProductRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/core/ProductRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/models/CategoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/models/CategoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/models/ProductImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/models/ProductImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/models/ProductImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/models/ProductImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/04. CarDealership.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/Skeleton.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/lib/apiguardian-api-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/lib/hamcrest-core-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/lib/junit-4.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/lib/junit-jupiter-5.4.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/lib/junit-jupiter-api-5.4.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/lib/junit-jupiter-engine-5.4.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/lib/junit-jupiter-params-5.4.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/lib/junit-platform-commons-1.4.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/lib/junit-platform-engine-1.4.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/lib/opentest4j-1.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/Startup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/commands/AddCommentCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/commands/AddVehicleCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/commands/BaseCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/commands/LoginCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/commands/LogoutCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/commands/RegisterUserCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/commands/RemoveCommentCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/commands/RemoveVehicleCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/commands/ShowUsersCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/commands/ShowVehiclesCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/commands/contracts/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/commands/enums/CommandType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/core/CommandFactoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/core/VehicleDealershipEngineImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/core/VehicleDealershipRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/core/contracts/CommandFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/core/contracts/VehicleDealershipEngine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/core/contracts/VehicleDealershipRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/models/CarImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/models/CommentImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/models/MotorcycleImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/models/TruckImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/models/UserImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/models/VehicleImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/models/contracts/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/models/contracts/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/models/contracts/Commentable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/models/contracts/Motorcycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/models/contracts/Priceable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/models/contracts/Truck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/models/contracts/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/models/contracts/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/models/enums/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/models/enums/VehicleType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/utils/FormattingHelpers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/utils/ParsingHelpers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/utils/ValidationHelpers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/tests/com/company/oop/dealership/commands/AddCommentTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/tests/com/company/oop/dealership/commands/AddVehicleTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/tests/com/company/oop/dealership/commands/LoginTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/tests/com/company/oop/dealership/commands/LogoutTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/tests/com/company/oop/dealership/commands/RegisterUserTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/tests/com/company/oop/dealership/commands/RemoveCommentTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/tests/com/company/oop/dealership/commands/RemoveVehicleTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/tests/com/company/oop/dealership/commands/ShowUsersTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/tests/com/company/oop/dealership/commands/ShowVehiclesTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/tests/com/company/oop/dealership/core/VehicleDealershipRepositoryTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/tests/com/company/oop/dealership/models/CarImplTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/tests/com/company/oop/dealership/models/CommentImplTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/tests/com/company/oop/dealership/models/MotorcycleImplTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/tests/com/company/oop/dealership/models/TruckImplTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/tests/com/company/oop/dealership/models/UserImplTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/tests/com/company/oop/dealership/utils/TestUtilities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/tests/com/company/oop/dealership/utils/VehicleBaseConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -162,6 +222,8 @@
       <workItem from="1682215450579" duration="2868000" />
       <workItem from="1682276237406" duration="1000" />
       <workItem from="1682276372991" duration="4657000" />
+      <workItem from="1682315275057" duration="1037000" />
+      <workItem from="1682340474764" duration="1244000" />
     </task>
     <task id="LOCAL-00001" summary="change workshop 3">
       <created>1681993606981</created>
@@ -254,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682215461000</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="change workshop">
+      <created>1682315285482</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1682315285482</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
