@@ -5,6 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ab2df1f-7e59-4104-ac2e-2ff090e54e24" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/exceptions/InvalidUserInputException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/utils/ParsingHelpers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/utils/ValidationHelpers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/commands/AddProductToCategoryCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/commands/AddProductToCategoryCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/commands/CreateCategoryCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/commands/CreateCategoryCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/commands/CreateProductCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/commands/CreateProductCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/commands/ShowCategoryCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/commands/ShowCategoryCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/core/CommandFactoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/core/CommandFactoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/core/ProductRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/core/ProductRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/models/CategoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/models/CategoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/models/ProductImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../In class activity/Exception Handling/Skeleton/src/com/company/oop/cosmetics/models/ProductImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/models/ProductImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../02. Cosmetics/Skeleton/src/com/company/oop/cosmetics/models/ProductImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,6 +161,7 @@
       <workItem from="1682198550106" duration="1609000" />
       <workItem from="1682215450579" duration="2868000" />
       <workItem from="1682276237406" duration="1000" />
+      <workItem from="1682276372991" duration="4657000" />
     </task>
     <task id="LOCAL-00001" summary="change workshop 3">
       <created>1681993606981</created>

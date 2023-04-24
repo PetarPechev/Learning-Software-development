@@ -35,9 +35,13 @@ public class ProductRepositoryImpl implements ProductRepository {
 
     @Override
     public Product findProductByName(String productName) {
-        // TODO: find a product with the given product name
+        for (Product product : products) {
+            if (product.getName().equalsIgnoreCase(productName)) {
+                return product;
+            }
+        }
 
-        return null;
+        throw new IllegalArgumentException(String.format(PRODUCT_DOES_NOT_EXIST, productName));
     }
 
     @Override

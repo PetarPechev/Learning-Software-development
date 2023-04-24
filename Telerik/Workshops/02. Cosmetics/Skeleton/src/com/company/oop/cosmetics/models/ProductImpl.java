@@ -71,6 +71,7 @@ public class ProductImpl implements Product {
     }
 
     protected void validatePrice(double price) {
+
         ValidationHelpers.validatePrice(price);
     }
 
