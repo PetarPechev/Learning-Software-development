@@ -32,10 +32,13 @@ public class VehicleDealershipRepositoryImpl implements VehicleDealershipReposit
     @Override
     public void addUser(User userToAdd) {
         if (users.contains(userToAdd)) {
-            throw new IllegalArgumentException(String.format(USER_ALREADY_EXIST, userToAdd.getUsername()));
+           throw new IllegalArgumentException(String.format(USER_ALREADY_EXIST, userToAdd.getUsername()));
         }
         this.users.add(userToAdd);
+
+
     }
+
 
     @Override
     public User findUserByUsername(String username) {

@@ -1,9 +1,19 @@
 package com.company.oop.dealership.models.enums;
 
 public enum VehicleType {
-    MOTORCYCLE,
-    CAR,
-    TRUCK;
+    MOTORCYCLE(2),
+    CAR(4),
+    TRUCK(8);
+
+
+    private final int wheelsCount;
+
+    VehicleType(int wheelsCount) {
+        this.wheelsCount = wheelsCount;
+    }
+    public int getWheelsCount() {
+        return wheelsCount;
+    }
 
     @Override
     public String toString() {

@@ -7,8 +7,7 @@ import org.junit.jupiter.api.Test;
 import static com.company.oop.dealership.models.CarImplTests.initializeTestCar;
 import static com.company.oop.dealership.models.CommentImplTests.VALID_AUTHOR;
 import static com.company.oop.dealership.models.CommentImplTests.VALID_CONTENT;
-import static com.company.oop.dealership.models.UserImpl.VIP_MAX_VEHICLES_TO_ADD;
-import static com.company.oop.dealership.utils.TestUtilities.*;
+import static com.company.oop.dealership.utils.TestUtilities.getString;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class UserImplTests {
@@ -154,7 +153,7 @@ public class UserImplTests {
     public void addVehicle_Should_ThrowException_WhenNormalUserReachedLimit() {
         // Arrange
         UserImpl user = initializeTestUser();
-        for (int i = 0; i < VIP_MAX_VEHICLES_TO_ADD; i++) {
+        for (int i = 0; i < NORMAL_ROLE_VEHICLE_LIMIT; i++) {
             user.addVehicle(initializeTestCar());
         }
 

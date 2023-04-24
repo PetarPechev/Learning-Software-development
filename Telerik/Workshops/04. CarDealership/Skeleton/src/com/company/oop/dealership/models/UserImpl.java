@@ -1,8 +1,17 @@
 package com.company.oop.dealership.models;
 
+import com.company.oop.dealership.models.contracts.Comment;
+import com.company.oop.dealership.models.contracts.User;
+import com.company.oop.dealership.models.contracts.Vehicle;
+import com.company.oop.dealership.models.enums.UserRole;
+import com.company.oop.dealership.utils.ValidationHelpers;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import static java.lang.String.format;
 
-public class UserImpl {
+public class UserImpl implements User {
 
     public static final int USERNAME_LEN_MIN = 2;
     public static final int USERNAME_LEN_MAX = 20;
@@ -45,14 +54,178 @@ public class UserImpl {
     private final static String USER_HEADER = "--USER %s--";
     private static final int NORMAL_ROLE_VEHICLE_LIMIT = 5;
 
-    //TODO
+
+
+
+    private String username;
+    private String firstName;
+    private String lastName;
+    private String password;
+    private final UserRole userRole;
+
+    private final List<Vehicle> vehicles;
+
+
+    public UserImpl(String username, String firstName, String lastName, String password, UserRole userRole) {
+        setUsername(username);
+        setFirstName(firstName);
+        setLastName(lastName);
+        setPassword(password);
+
+        this.userRole = userRole;
+        vehicles = new ArrayList<>();
+    }
+
+    private void setPassword(String password) {
+        validatePassword(password);
+
+        this.password = password;
+    }
+
+    private void validatePassword(String password) {
+        ValidationHelpers.validateIntRange(password.length(),
+                PASSWORD_LEN_MIN,
+                PASSWORD_LEN_MAX,
+                PASSWORD_LEN_ERR);
+
+        ValidationHelpers.validatePattern(password,
+                PASSWORD_REGEX_PATTERN,
+                PASSWORD_PATTERN_ERR);
+    }
+
+    private void setLastName(String lastName) {
+        validateLastName(lastName);
+
+        this.lastName = lastName;
+    }
+
+    private void validateLastName(String lastName) {
+        ValidationHelpers.validateIntRange(lastName.length(),
+                LASTNAME_LEN_MIN,
+                LASTNAME_LEN_MAX,
+                LASTNAME_LEN_ERR);
+    }
+
+    private void setFirstName(String firstName) {
+        validateFirstName(firstName);
+
+        this.firstName = firstName;
+    }
+
+    private void validateFirstName(String firstName) {
+        ValidationHelpers.validateIntRange(firstName.length(),
+                FIRSTNAME_LEN_MIN,
+                FIRSTNAME_LEN_MAX,
+                FIRSTNAME_LEN_ERR);
+    }
+
+    private void setUsername(String username) {
+        validateUsername(username);
+
+        this.username = username;
+    }
+
+    private void validateUsername(String username) {
+        ValidationHelpers.validateIntRange(username.length(),
+                USERNAME_LEN_MIN,
+                USERNAME_LEN_MAX,
+                USERNAME_LEN_ERR);
+
+        ValidationHelpers.validatePattern(username,
+                USERNAME_REGEX_PATTERN,
+                USERNAME_PATTERN_ERR);
+    }
+
+    @Override
+    public String getUsername() {
+        return username;
+    }
+
+    @Override
+    public String getFirstName() {
+        return firstName;
+    }
+
+    @Override
+    public String getLastName() {
+        return lastName;
+    }
+
+    @Override
+    public String getPassword() {
+        return password;
+    }
+
+    @Override
+    public UserRole getRole() {
+        return userRole;
+    }
+
+    @Override
+    public List<Vehicle> getVehicles() {
+        return new ArrayList<>(vehicles);
+    }
+
+    @Override
+    public void addVehicle(Vehicle vehicle) {
+        if (isAdmin()) {
+            throw new IllegalArgumentException(ADMIN_CANNOT_ADD_VEHICLES);
+        } else if (userRole.equals(UserRole.NORMAL) && vehicles.size() >= NORMAL_ROLE_VEHICLE_LIMIT) {
+            throw new IllegalArgumentException(NOT_AN_VIP_USER_VEHICLES_ADD);
+        }
+
+        vehicles.add(vehicle);
+    }
+
+    @Override
+    public void removeVehicle(Vehicle vehicle) {
+
+        vehicles.remove(vehicle);
+    }
+
+    @Override
+    public void addComment(Comment commentToAdd, Vehicle vehicleToAddComment) {
+       vehicleToAddComment.addComment(commentToAdd);
+    }
+
+    @Override
+    public void removeComment(Comment commentToRemove, Vehicle vehicleToRemoveComment) {
+        if (username.equals(commentToRemove.getAuthor())) {
+            vehicleToRemoveComment.removeComment(commentToRemove);
+        }
+    }
+
+    @Override
+    public String printVehicles() {
+
+
+        return null;
+    }
+
+    @Override
+    public boolean isAdmin() {
+
+
+        return userRole.equals(UserRole.ADMIN);
+    }
+
+    public String toString() {
+        if (isAdmin()){
+            return String.format(USER_TO_STRING,getUsername(),getFirstName(),getLastName(),getRole());
+        }else {
+            throw new IllegalArgumentException("You are not an admin!");
+        }
+    }
+
+
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         UserImpl user = (UserImpl) o;
-        return username.equals(user.username) && firstName.equals(user.firstName)
+        return username.equals(user.username)
+                && firstName.equals(user.firstName)
                 && lastName.equals(user.lastName) && userRole == user.userRole;
     }
 }
