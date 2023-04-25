@@ -1,15 +1,15 @@
-package com.company.oop.dealership.models;
+package com.company.oop.dealership.models.vehicles;
 
-import com.company.oop.dealership.models.contracts.Truck;
-import com.company.oop.dealership.models.enums.VehicleType;
+import com.company.oop.dealership.models.vehicles.enums.VehicleType;
+import com.company.oop.dealership.models.vehicles.contracts.Truck;
 import com.company.oop.dealership.utils.ValidationHelpers;
 
 import static java.lang.String.format;
 
 public class TruckImpl extends VehicleImpl implements Truck {
 
-    public static final int WEIGHT_CAP_MIN = 1;
-    public static final int WEIGHT_CAP_MAX = 100;
+    private static final int WEIGHT_CAP_MIN = 1;
+    private static final int WEIGHT_CAP_MAX = 100;
     private static final String WEIGHT_CAP_ERR = format(
             "Weight capacity must be between %d and %d!",
             WEIGHT_CAP_MIN,
@@ -30,6 +30,11 @@ public class TruckImpl extends VehicleImpl implements Truck {
         this.weightCapacity = weightCapacity;
     }
 
+    @Override
+    public int getWeightCapacity() {
+        return weightCapacity;
+    }
+
     private void validateWeightCapacity(int weightCapacity) {
         ValidationHelpers.validateIntRange(weightCapacity,
                 WEIGHT_CAP_MIN,
@@ -37,18 +42,11 @@ public class TruckImpl extends VehicleImpl implements Truck {
                 WEIGHT_CAP_ERR);
     }
 
-    @Override
-    public int getWeightCapacity() {
-        return weightCapacity;
-    }
 
     @Override
     public String toString() {
-        return "Car:" + System.lineSeparator() +
+        return "Truck:" + System.lineSeparator() +
                 super.toString() + System.lineSeparator() +
-                "Weight capacity: " + weightCapacity + "t" + System.lineSeparator() +
-                super.printComments(getComments());
+                "Weight Capacity: " + weightCapacity + "t" + System.lineSeparator();
     }
-
-    //TODO
 }

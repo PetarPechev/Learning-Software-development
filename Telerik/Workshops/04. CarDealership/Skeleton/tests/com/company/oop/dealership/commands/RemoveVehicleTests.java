@@ -2,7 +2,7 @@ package com.company.oop.dealership.commands;
 
 import com.company.oop.dealership.core.VehicleDealershipRepositoryImpl;
 import com.company.oop.dealership.core.contracts.VehicleDealershipRepository;
-import com.company.oop.dealership.models.contracts.Car;
+import com.company.oop.dealership.models.vehicles.contracts.Car;
 import com.company.oop.dealership.models.contracts.User;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -58,7 +58,7 @@ public class RemoveVehicleTests {
     }
 
     @Test
-    public void should_RemoveCommentFromUser_When_ArgumentsAreValid() {
+    public void should_RemoveVehicleFromUser_When_ArgumentsAreValid() {
         // Arrange
         Car testCar = initializeTestCar();
         user.addVehicle(testCar);

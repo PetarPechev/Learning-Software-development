@@ -1,6 +1,7 @@
 package com.company.oop.dealership.models.contracts;
 
 import com.company.oop.dealership.models.enums.UserRole;
+import com.company.oop.dealership.models.vehicles.contracts.Vehicle;
 
 import java.util.List;
 

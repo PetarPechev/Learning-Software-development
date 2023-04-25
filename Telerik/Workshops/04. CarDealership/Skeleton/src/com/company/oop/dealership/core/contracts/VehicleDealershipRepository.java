@@ -2,6 +2,9 @@ package com.company.oop.dealership.core.contracts;
 
 import com.company.oop.dealership.models.contracts.*;
 import com.company.oop.dealership.models.enums.UserRole;
+import com.company.oop.dealership.models.vehicles.contracts.Car;
+import com.company.oop.dealership.models.vehicles.contracts.Motorcycle;
+import com.company.oop.dealership.models.vehicles.contracts.Truck;
 
 import java.util.List;
 

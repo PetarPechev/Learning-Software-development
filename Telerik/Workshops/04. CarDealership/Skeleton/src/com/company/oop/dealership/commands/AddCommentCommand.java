@@ -3,11 +3,12 @@ package com.company.oop.dealership.commands;
 import com.company.oop.dealership.core.contracts.VehicleDealershipRepository;
 import com.company.oop.dealership.models.contracts.Comment;
 import com.company.oop.dealership.models.contracts.User;
-import com.company.oop.dealership.models.contracts.Vehicle;
+import com.company.oop.dealership.models.vehicles.contracts.Vehicle;
 import com.company.oop.dealership.utils.ParsingHelpers;
 import com.company.oop.dealership.utils.ValidationHelpers;
 
 import java.util.List;
+
 public class AddCommentCommand extends BaseCommand {
 
     public static final int EXPECTED_NUMBER_OF_ARGUMENTS = 3;

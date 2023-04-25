@@ -7,8 +7,8 @@ import static java.lang.String.format;
 
 public class CommentImpl implements Comment {
 
-    public static final int CONTENT_LEN_MIN = 3;
-    public static final int CONTENT_LEN_MAX = 200;
+    private static final int CONTENT_LEN_MIN = 3;
+    private static final int CONTENT_LEN_MAX = 200;
     private static final String CONTENT_LEN_ERR = format(
             "Content must be between %d and %d characters long!",
             CONTENT_LEN_MIN,
@@ -30,6 +30,11 @@ public class CommentImpl implements Comment {
         this.content = content;
     }
 
+    @Override
+    public String getContent() {
+        return content;
+    }
+
     private void validateContent(String content) {
         ValidationHelpers.validateIntRange(content.length(),
                 CONTENT_LEN_MIN,
@@ -37,16 +42,16 @@ public class CommentImpl implements Comment {
                 CONTENT_LEN_ERR);
     }
 
-
-    @Override
-    public String getContent() {
-        return content;
-    }
-
     @Override
     public String getAuthor() {
         return author;
     }
 
-    //TODO
+    @Override
+    public String toString() {
+        return String.format("----------%n" +
+                "%s%n" +
+                "User: %s%n" +
+                "----------%n", getContent(), getAuthor());
+    }
 }

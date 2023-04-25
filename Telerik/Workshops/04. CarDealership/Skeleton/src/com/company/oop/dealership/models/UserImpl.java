@@ -2,7 +2,7 @@ package com.company.oop.dealership.models;
 
 import com.company.oop.dealership.models.contracts.Comment;
 import com.company.oop.dealership.models.contracts.User;
-import com.company.oop.dealership.models.contracts.Vehicle;
+import com.company.oop.dealership.models.vehicles.contracts.Vehicle;
 import com.company.oop.dealership.models.enums.UserRole;
 import com.company.oop.dealership.utils.ValidationHelpers;
 
@@ -13,8 +13,8 @@ import static java.lang.String.format;
 
 public class UserImpl implements User {
 
-    public static final int USERNAME_LEN_MIN = 2;
-    public static final int USERNAME_LEN_MAX = 20;
+    private static final int USERNAME_LEN_MIN = 2;
+    private static final int USERNAME_LEN_MAX = 20;
     private static final String USERNAME_REGEX_PATTERN = "^[A-Za-z0-9]+$";
     private static final String USERNAME_PATTERN_ERR = "Username contains invalid symbols!";
     private static final String USERNAME_LEN_ERR = format(
@@ -22,8 +22,8 @@ public class UserImpl implements User {
             USERNAME_LEN_MIN,
             USERNAME_LEN_MAX);
 
-    public static final int PASSWORD_LEN_MIN = 5;
-    public static final int PASSWORD_LEN_MAX = 30;
+    private static final int PASSWORD_LEN_MIN = 5;
+    private static final int PASSWORD_LEN_MAX = 30;
     private static final String PASSWORD_REGEX_PATTERN = "^[A-Za-z0-9@*_-]+$";
     private static final String PASSWORD_PATTERN_ERR = "Password contains invalid symbols!";
     private static final String PASSWORD_LEN_ERR = format(
@@ -38,8 +38,8 @@ public class UserImpl implements User {
             LASTNAME_LEN_MIN,
             LASTNAME_LEN_MAX);
 
-    public static final int FIRSTNAME_LEN_MIN = 2;
-    public static final int FIRSTNAME_LEN_MAX = 20;
+    private static final int FIRSTNAME_LEN_MIN = 2;
+    private static final int FIRSTNAME_LEN_MAX = 20;
     private static final String FIRSTNAME_LEN_ERR = format(
             "Firstname must be between %s and %s characters long!",
             FIRSTNAME_LEN_MIN,
@@ -53,8 +53,6 @@ public class UserImpl implements User {
     private final static String NO_VEHICLES_HEADER = "--NO VEHICLES--";
     private final static String USER_HEADER = "--USER %s--";
     private static final int NORMAL_ROLE_VEHICLE_LIMIT = 5;
-
-
 
 
     private String username;
@@ -76,21 +74,22 @@ public class UserImpl implements User {
         vehicles = new ArrayList<>();
     }
 
-    private void setPassword(String password) {
-        validatePassword(password);
+    private void setFirstName(String firstName) {
+        validateFirstName(firstName);
 
-        this.password = password;
+        this.firstName = firstName;
     }
 
-    private void validatePassword(String password) {
-        ValidationHelpers.validateIntRange(password.length(),
-                PASSWORD_LEN_MIN,
-                PASSWORD_LEN_MAX,
-                PASSWORD_LEN_ERR);
+    private void validateFirstName(String firstName) {
+        ValidationHelpers.validateIntRange(firstName.length(),
+                FIRSTNAME_LEN_MIN,
+                FIRSTNAME_LEN_MAX,
+                FIRSTNAME_LEN_ERR);
+    }
 
-        ValidationHelpers.validatePattern(password,
-                PASSWORD_REGEX_PATTERN,
-                PASSWORD_PATTERN_ERR);
+    @Override
+    public String getFirstName() {
+        return firstName;
     }
 
     private void setLastName(String lastName) {
@@ -106,17 +105,9 @@ public class UserImpl implements User {
                 LASTNAME_LEN_ERR);
     }
 
-    private void setFirstName(String firstName) {
-        validateFirstName(firstName);
-
-        this.firstName = firstName;
-    }
-
-    private void validateFirstName(String firstName) {
-        ValidationHelpers.validateIntRange(firstName.length(),
-                FIRSTNAME_LEN_MIN,
-                FIRSTNAME_LEN_MAX,
-                FIRSTNAME_LEN_ERR);
+    @Override
+    public String getLastName() {
+        return lastName;
     }
 
     private void setUsername(String username) {
@@ -141,20 +132,28 @@ public class UserImpl implements User {
         return username;
     }
 
-    @Override
-    public String getFirstName() {
-        return firstName;
+    private void setPassword(String password) {
+        validatePassword(password);
+
+        this.password = password;
     }
 
-    @Override
-    public String getLastName() {
-        return lastName;
+    private void validatePassword(String password) {
+        ValidationHelpers.validateIntRange(password.length(),
+                PASSWORD_LEN_MIN,
+                PASSWORD_LEN_MAX,
+                PASSWORD_LEN_ERR);
+
+        ValidationHelpers.validatePattern(password,
+                PASSWORD_REGEX_PATTERN,
+                PASSWORD_PATTERN_ERR);
     }
 
     @Override
     public String getPassword() {
         return password;
     }
+
 
     @Override
     public UserRole getRole() {
@@ -167,11 +166,16 @@ public class UserImpl implements User {
     }
 
     @Override
+    public boolean isAdmin() {
+        return userRole.equals(UserRole.ADMIN);
+    }
+
+    @Override
     public void addVehicle(Vehicle vehicle) {
         if (isAdmin()) {
             throw new IllegalArgumentException(ADMIN_CANNOT_ADD_VEHICLES);
         } else if (userRole.equals(UserRole.NORMAL) && vehicles.size() >= NORMAL_ROLE_VEHICLE_LIMIT) {
-            throw new IllegalArgumentException(NOT_AN_VIP_USER_VEHICLES_ADD);
+            throw new IllegalArgumentException(String.format(NOT_AN_VIP_USER_VEHICLES_ADD, NORMAL_ROLE_VEHICLE_LIMIT));
         }
 
         vehicles.add(vehicle);
@@ -179,45 +183,62 @@ public class UserImpl implements User {
 
     @Override
     public void removeVehicle(Vehicle vehicle) {
-
         vehicles.remove(vehicle);
     }
 
     @Override
     public void addComment(Comment commentToAdd, Vehicle vehicleToAddComment) {
-       vehicleToAddComment.addComment(commentToAdd);
+        vehicleToAddComment.addComment(commentToAdd);
     }
 
     @Override
     public void removeComment(Comment commentToRemove, Vehicle vehicleToRemoveComment) {
         if (username.equals(commentToRemove.getAuthor())) {
             vehicleToRemoveComment.removeComment(commentToRemove);
+        } else {
+            throw new IllegalArgumentException(YOU_ARE_NOT_THE_AUTHOR);
         }
     }
 
+    public String getCommentsAsString(List<Comment> comments) {
+        StringBuilder sb = new StringBuilder();
+
+        if (comments.isEmpty()) {
+            sb.append("--NO COMMENTS--");
+        } else {
+            sb.append("--COMMENTS--");
+            sb.append(System.lineSeparator());
+
+            for (Comment c : comments) {
+                sb.append(c.toString());
+            }
+            sb.append("--COMMENTS--");
+        }
+
+        return sb.toString();
+    }
     @Override
     public String printVehicles() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(String.format(USER_HEADER, username))
+                .append(System.lineSeparator());
 
+        if (vehicles.isEmpty()) {
+            sb.append(NO_VEHICLES_HEADER);
+        } else {
+            for (Vehicle vehicle : vehicles) {
+                sb.append(vehicles.indexOf(vehicle) + 1).append(". ").
+                        append(vehicle.toString())
+                        .append(getCommentsAsString(vehicle.getComments()));
 
-        return null;
-    }
-
-    @Override
-    public boolean isAdmin() {
-
-
-        return userRole.equals(UserRole.ADMIN);
-    }
-
-    public String toString() {
-        if (isAdmin()){
-            return String.format(USER_TO_STRING,getUsername(),getFirstName(),getLastName(),getRole());
-        }else {
-            throw new IllegalArgumentException("You are not an admin!");
+                if (!(vehicle.equals(vehicles.get(vehicles.size() - 1)))) {
+                    sb.append(System.lineSeparator());
+                }
+            }
         }
+
+        return sb.toString();
     }
-
-
 
     @Override
     public boolean equals(Object o) {
@@ -227,5 +248,10 @@ public class UserImpl implements User {
         return username.equals(user.username)
                 && firstName.equals(user.firstName)
                 && lastName.equals(user.lastName) && userRole == user.userRole;
+    }
+
+    @Override
+    public String toString() {
+        return String.format(USER_TO_STRING, getUsername(), getFirstName(), getLastName(), getRole());
     }
 }

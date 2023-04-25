@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ab2df1f-7e59-4104-ac2e-2ff090e54e24" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../04. CarDealership/.idea/git_toolbox_prj.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/commands/RegisterUserCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/commands/RegisterUserCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/commands/ShowUsersCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/commands/ShowUsersCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/core/CommandFactoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/core/CommandFactoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/core/VehicleDealershipRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/core/VehicleDealershipRepositoryImpl.java" afterDir="false" />
@@ -15,8 +15,8 @@
       <change beforePath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/models/MotorcycleImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/models/MotorcycleImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/models/TruckImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/models/TruckImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/models/UserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/models/UserImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/models/VehicleImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/models/VehicleImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/models/enums/VehicleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/src/com/company/oop/dealership/models/enums/VehicleType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04. CarDealership/Skeleton/tests/com/company/oop/dealership/commands/RemoveVehicleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/tests/com/company/oop/dealership/commands/RemoveVehicleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04. CarDealership/Skeleton/tests/com/company/oop/dealership/core/VehicleDealershipRepositoryTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/tests/com/company/oop/dealership/core/VehicleDealershipRepositoryTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../04. CarDealership/Skeleton/tests/com/company/oop/dealership/models/UserImplTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../04. CarDealership/Skeleton/tests/com/company/oop/dealership/models/UserImplTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +157,8 @@
       <workItem from="1682276237406" duration="1000" />
       <workItem from="1682276372991" duration="4657000" />
       <workItem from="1682315275057" duration="1037000" />
-      <workItem from="1682340474764" duration="3736000" />
+      <workItem from="1682340474764" duration="5816000" />
+      <workItem from="1682413626431" duration="603000" />
     </task>
     <task id="LOCAL-00001" summary="change workshop 3">
       <created>1681993606981</created>

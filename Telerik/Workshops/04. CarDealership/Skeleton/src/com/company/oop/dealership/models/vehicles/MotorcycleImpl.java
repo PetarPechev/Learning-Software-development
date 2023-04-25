@@ -1,15 +1,15 @@
-package com.company.oop.dealership.models;
+package com.company.oop.dealership.models.vehicles;
 
-import com.company.oop.dealership.models.contracts.Motorcycle;
-import com.company.oop.dealership.models.enums.VehicleType;
+import com.company.oop.dealership.models.vehicles.enums.VehicleType;
+import com.company.oop.dealership.models.vehicles.contracts.Motorcycle;
 import com.company.oop.dealership.utils.ValidationHelpers;
 
 import static java.lang.String.format;
 
 public class MotorcycleImpl extends VehicleImpl implements Motorcycle {
 
-    public static final int CATEGORY_LEN_MIN = 3;
-    public static final int CATEGORY_LEN_MAX = 10;
+    private static final int CATEGORY_LEN_MIN = 3;
+    private static final int CATEGORY_LEN_MAX = 10;
     private static final String CATEGORY_LEN_ERR = format(
             "Category must be between %d and %d characters long!",
             CATEGORY_LEN_MIN,
@@ -44,12 +44,8 @@ public class MotorcycleImpl extends VehicleImpl implements Motorcycle {
 
     @Override
     public String toString() {
-        return "Car:" + System.lineSeparator() +
+        return "Motorcycle:" + System.lineSeparator() +
                 super.toString() + System.lineSeparator() +
-                "Category: " + category  + System.lineSeparator() +
-                super.printComments(getComments());
+                "Category: " + category + System.lineSeparator();
     }
-
-
-    //TODO
 }

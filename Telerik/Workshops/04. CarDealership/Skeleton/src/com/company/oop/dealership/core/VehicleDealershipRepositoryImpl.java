@@ -5,6 +5,10 @@ import com.company.oop.dealership.core.contracts.VehicleDealershipRepository;
 import com.company.oop.dealership.models.*;
 import com.company.oop.dealership.models.contracts.*;
 import com.company.oop.dealership.models.enums.UserRole;
+import com.company.oop.dealership.models.vehicles.*;
+import com.company.oop.dealership.models.vehicles.contracts.Car;
+import com.company.oop.dealership.models.vehicles.contracts.Motorcycle;
+import com.company.oop.dealership.models.vehicles.contracts.Truck;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,11 +36,9 @@ public class VehicleDealershipRepositoryImpl implements VehicleDealershipReposit
     @Override
     public void addUser(User userToAdd) {
         if (users.contains(userToAdd)) {
-           throw new IllegalArgumentException(String.format(USER_ALREADY_EXIST, userToAdd.getUsername()));
+            throw new IllegalArgumentException(String.format(USER_ALREADY_EXIST, userToAdd.getUsername()));
         }
         this.users.add(userToAdd);
-
-
     }
 
 

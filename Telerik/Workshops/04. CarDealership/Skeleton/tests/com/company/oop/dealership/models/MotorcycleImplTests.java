@@ -1,7 +1,8 @@
 package com.company.oop.dealership.models;
 
-import com.company.oop.dealership.models.contracts.Motorcycle;
-import com.company.oop.dealership.models.contracts.Vehicle;
+import com.company.oop.dealership.models.vehicles.contracts.Motorcycle;
+import com.company.oop.dealership.models.vehicles.MotorcycleImpl;
+import com.company.oop.dealership.models.vehicles.contracts.Vehicle;
 import com.company.oop.dealership.utils.TestUtilities;
 import com.company.oop.dealership.utils.VehicleBaseConstants;
 import org.junit.jupiter.api.Assertions;

@@ -1,4 +1,4 @@
-package com.company.oop.dealership.models.enums;
+package com.company.oop.dealership.models.vehicles.enums;
 
 public enum VehicleType {
     MOTORCYCLE(2),
@@ -11,6 +11,7 @@ public enum VehicleType {
     VehicleType(int wheelsCount) {
         this.wheelsCount = wheelsCount;
     }
+
     public int getWheelsCount() {
         return wheelsCount;
     }

@@ -2,7 +2,7 @@ package com.company.oop.dealership.commands;
 
 import com.company.oop.dealership.core.VehicleDealershipRepositoryImpl;
 import com.company.oop.dealership.core.contracts.VehicleDealershipRepository;
-import com.company.oop.dealership.models.contracts.Car;
+import com.company.oop.dealership.models.vehicles.contracts.Car;
 import com.company.oop.dealership.models.contracts.Comment;
 import com.company.oop.dealership.models.contracts.User;
 import org.junit.jupiter.api.Assertions;

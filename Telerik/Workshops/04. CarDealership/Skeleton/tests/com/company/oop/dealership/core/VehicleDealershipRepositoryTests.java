@@ -5,6 +5,9 @@ import com.company.oop.dealership.core.contracts.VehicleDealershipRepository;
 import com.company.oop.dealership.models.UserImplTests;
 import com.company.oop.dealership.models.contracts.*;
 import com.company.oop.dealership.models.enums.UserRole;
+import com.company.oop.dealership.models.vehicles.contracts.Car;
+import com.company.oop.dealership.models.vehicles.contracts.Motorcycle;
+import com.company.oop.dealership.models.vehicles.contracts.Truck;
 import com.company.oop.dealership.utils.VehicleBaseConstants;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -31,11 +34,8 @@ public class VehicleDealershipRepositoryTests {
         // Arrange
         User user = addInitializedUserToRepo(repository);
 
-        // Act
-        repository.addUser(user);
-
-        // Assert
-        assertEquals(1, repository.getUsers().size());
+        // Act, Assert
+        assertThrows(IllegalArgumentException.class, () -> repository.addUser(user));
     }
 
     @Test

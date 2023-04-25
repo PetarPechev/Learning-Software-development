@@ -1,13 +1,14 @@
 package com.company.oop.dealership.models;
 
 import com.company.oop.dealership.models.enums.UserRole;
+import com.company.oop.dealership.models.vehicles.CarImpl;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static com.company.oop.dealership.models.CarImplTests.initializeTestCar;
 import static com.company.oop.dealership.models.CommentImplTests.VALID_AUTHOR;
 import static com.company.oop.dealership.models.CommentImplTests.VALID_CONTENT;
-import static com.company.oop.dealership.utils.TestUtilities.getString;
+import static com.company.oop.dealership.utils.TestUtilities.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class UserImplTests {

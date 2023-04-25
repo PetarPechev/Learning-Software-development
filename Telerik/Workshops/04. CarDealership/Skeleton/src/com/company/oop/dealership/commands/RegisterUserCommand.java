@@ -57,4 +57,5 @@ public class RegisterUserCommand extends BaseCommand {
             );
         }
     }
+
 }
