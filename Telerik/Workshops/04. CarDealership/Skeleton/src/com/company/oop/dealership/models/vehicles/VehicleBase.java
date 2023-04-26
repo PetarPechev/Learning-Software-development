@@ -37,20 +37,20 @@ public abstract class VehicleBase implements Vehicle {
     private String model;
     private double price;
 
-    private final VehicleType type;
+    private final VehicleType vehicleType;
     private final int wheels;
 
     private final List<Comment> comments;
 
 
-    protected VehicleBase(String make, String model, double price, VehicleType type) {
+    protected VehicleBase(String make, String model, double price, VehicleType vehicleType) {
         setMake(make);
         setModel(model);
         setPrice(price);
 
-        this.type = type;
-        this.wheels = type.getWheelsCount();
+        this.vehicleType = vehicleType;
 
+        wheels = vehicleType.getWheelsCount();
         comments = new ArrayList<>();
     }
 
@@ -121,8 +121,8 @@ public abstract class VehicleBase implements Vehicle {
     }
 
     @Override
-    public VehicleType getType() {
-        return type;
+    public VehicleType getVehicleType() {
+        return vehicleType;
     }
 
 

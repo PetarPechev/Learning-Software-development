@@ -9,7 +9,7 @@ public interface Vehicle extends Commentable, Priceable {
 
     int getWheels();
 
-    VehicleType getType();
+    VehicleType getVehicleType();
 
     String getMake();
 
