@@ -6,7 +6,7 @@ import com.company.oop.dealership.utils.ValidationHelpers;
 
 import static java.lang.String.format;
 
-public class TruckImpl extends VehicleImpl implements Truck {
+public class TruckImpl extends VehicleBase implements Truck {
 
     private static final int WEIGHT_CAP_MIN = 1;
     private static final int WEIGHT_CAP_MAX = 100;

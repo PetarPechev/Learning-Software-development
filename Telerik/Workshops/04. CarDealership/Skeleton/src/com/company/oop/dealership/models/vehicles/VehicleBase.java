@@ -11,7 +11,7 @@ import java.util.List;
 
 import static java.lang.String.format;
 
-public abstract class VehicleImpl implements Vehicle {
+public abstract class VehicleBase implements Vehicle {
 
     private static final int MAKE_NAME_LEN_MIN = 2;
     private static final int MAKE_NAME_LEN_MAX = 15;
@@ -43,7 +43,7 @@ public abstract class VehicleImpl implements Vehicle {
     private final List<Comment> comments;
 
 
-    protected VehicleImpl(String make, String model, double price, VehicleType type) {
+    protected VehicleBase(String make, String model, double price, VehicleType type) {
         setMake(make);
         setModel(model);
         setPrice(price);

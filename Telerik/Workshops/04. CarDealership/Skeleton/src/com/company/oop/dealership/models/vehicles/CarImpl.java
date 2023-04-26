@@ -6,7 +6,7 @@ import com.company.oop.dealership.utils.ValidationHelpers;
 
 import static java.lang.String.format;
 
-public class CarImpl extends VehicleImpl implements Car {
+public class CarImpl extends VehicleBase implements Car {
 
     private static final int CAR_SEATS_MIN = 1;
     private static final int CAR_SEATS_MAX = 10;
