@@ -4,7 +4,97 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ab2df1f-7e59-4104-ac2e-2ff090e54e24" name="Changes" comment="" />
+    <list default="true" id="7ab2df1f-7e59-4104-ac2e-2ff090e54e24" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Lambdas &amp; Stream API/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Lambdas &amp; Stream API/Lambdas &amp; Stream API.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Lambdas &amp; Stream API/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Lambdas &amp; Stream API/Skeleton/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Lambdas &amp; Stream API/Skeleton/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Lambdas &amp; Stream API/Skeleton/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Lambdas &amp; Stream API/Skeleton/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Lambdas &amp; Stream API/Skeleton/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Lambdas &amp; Stream API/Skeleton/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Lambdas &amp; Stream API/Skeleton/Skeleton.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Lambdas &amp; Stream API/Skeleton/lib/apiguardian-api-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Lambdas &amp; Stream API/Skeleton/lib/junit-jupiter-5.4.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Lambdas &amp; Stream API/Skeleton/lib/junit-jupiter-api-5.4.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Lambdas &amp; Stream API/Skeleton/lib/junit-jupiter-engine-5.4.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Lambdas &amp; Stream API/Skeleton/lib/junit-jupiter-params-5.4.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Lambdas &amp; Stream API/Skeleton/lib/junit-platform-commons-1.4.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Lambdas &amp; Stream API/Skeleton/lib/junit-platform-engine-1.4.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Lambdas &amp; Stream API/Skeleton/lib/opentest4j-1.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Lambdas &amp; Stream API/Skeleton/src/com/company/DataProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Lambdas &amp; Stream API/Skeleton/src/com/company/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Lambdas &amp; Stream API/Skeleton/src/com/company/models/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Lambdas &amp; Stream API/Skeleton/src/com/company/models/Genre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Lambdas &amp; Stream API/Skeleton/src/com/company/models/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Lambdas &amp; Stream API/Skeleton/tests/com/company/DataProcessorTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Lambdas &amp; Stream API/Skeleton/tests/com/company/MovieDataGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Unit Testing/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Unit Testing/Skeleton/src/com/company/oop/cosmetics/Startup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Unit Testing/Skeleton/src/com/company/oop/cosmetics/commands/AddProductToCategoryCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Unit Testing/Skeleton/src/com/company/oop/cosmetics/commands/CommandType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Unit Testing/Skeleton/src/com/company/oop/cosmetics/commands/CreateCategoryCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Unit Testing/Skeleton/src/com/company/oop/cosmetics/commands/CreateProductCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Unit Testing/Skeleton/src/com/company/oop/cosmetics/commands/ShowCategoryCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Unit Testing/Skeleton/src/com/company/oop/cosmetics/commands/contracts/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Unit Testing/Skeleton/src/com/company/oop/cosmetics/core/CommandFactoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Unit Testing/Skeleton/src/com/company/oop/cosmetics/core/EngineImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Unit Testing/Skeleton/src/com/company/oop/cosmetics/core/ProductRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Unit Testing/Skeleton/src/com/company/oop/cosmetics/core/contracts/CommandFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Unit Testing/Skeleton/src/com/company/oop/cosmetics/core/contracts/Engine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Unit Testing/Skeleton/src/com/company/oop/cosmetics/core/contracts/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Unit Testing/Skeleton/src/com/company/oop/cosmetics/exceptions/DuplicateEntityException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Unit Testing/Skeleton/src/com/company/oop/cosmetics/exceptions/InvalidUserInputException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Unit Testing/Skeleton/src/com/company/oop/cosmetics/models/CategoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Unit Testing/Skeleton/src/com/company/oop/cosmetics/models/GenderType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Unit Testing/Skeleton/src/com/company/oop/cosmetics/models/ProductImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Unit Testing/Skeleton/src/com/company/oop/cosmetics/models/contracts/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Unit Testing/Skeleton/src/com/company/oop/cosmetics/models/contracts/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Unit Testing/Skeleton/tests/com/company/oop/cosmetics/tests/commands/AddProductToCategoryCommandTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Unit Testing/Skeleton/tests/com/company/oop/cosmetics/tests/commands/CreateCategoryCommandTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Unit Testing/Skeleton/tests/com/company/oop/cosmetics/tests/commands/CreateProductCommandTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Unit Testing/Skeleton/tests/com/company/oop/cosmetics/tests/commands/ShowCategoryCommandTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Unit Testing/Skeleton/tests/com/company/oop/cosmetics/tests/core/ProductRepositoryImplTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Unit Testing/Skeleton/tests/com/company/oop/cosmetics/tests/models/CategoryImplTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Unit Testing/Skeleton/tests/com/company/oop/cosmetics/tests/models/ProductImplTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../In class activity/Unit Testing/Unit Testing.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/01. User System/01. User System.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/01. User System/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/01. User System/Skeleton/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/01. User System/Skeleton/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/01. User System/Skeleton/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/01. User System/Skeleton/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/01. User System/Skeleton/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/01. User System/Skeleton/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/01. User System/Skeleton/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/01. User System/Skeleton/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/01. User System/Skeleton/src/com/telerikacademy/core/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/01. User System/Skeleton/src/com/telerikacademy/core/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/01. User System/Skeleton/src/com/telerikacademy/core/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/01. User System/Skeleton/src/com/telerikacademy/core/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/01. User System/Skeleton/src/com/telerikacademy/core/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/01. User System/Skeleton/src/com/telerikacademy/core/core.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/02. Game Of Life - Optional/02. Game Of Life - Optional.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/02. Game Of Life - Optional/Images/img01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/02. Game Of Life - Optional/Images/img02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/02. Game Of Life - Optional/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/02. Game Of Life - Optional/Skeleton/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/02. Game Of Life - Optional/Skeleton/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/02. Game Of Life - Optional/Skeleton/.idea/Skeleton.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/02. Game Of Life - Optional/Skeleton/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/02. Game Of Life - Optional/Skeleton/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/02. Game Of Life - Optional/Skeleton/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/02. Game Of Life - Optional/Skeleton/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/02. Game Of Life - Optional/Skeleton/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/02. Game Of Life - Optional/Skeleton/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/02. Game Of Life - Optional/Skeleton/src/com/telerikacademy/core/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/02. Game Of Life - Optional/Skeleton/src/com/telerikacademy/core/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/02. Game Of Life - Optional/Skeleton/src/com/telerikacademy/core/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/02. Game Of Life - Optional/Skeleton/src/com/telerikacademy/core/GameOfLife.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../In class activity/In-class activity - Methods/02. Game Of Life - Optional/Skeleton/src/com/telerikacademy/core/core.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,7 +140,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.All in 03. Agency">
+  <component name="RunManager" selected="Application.Startup">
     <configuration name="Startup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.oop.agency.Startup" />
       <module name="03. Agency" />
@@ -118,8 +208,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in 03. Agency" />
         <item itemvalue="Application.Startup" />
+        <item itemvalue="JUnit.All in 03. Agency" />
         <item itemvalue="JUnit.BusTests" />
         <item itemvalue="JUnit.AirplaneTests" />
         <item itemvalue="JUnit.com.company.oop.agency.tests in 03. Agency" />
@@ -146,6 +236,9 @@
       <workItem from="1682340474764" duration="5816000" />
       <workItem from="1682413626431" duration="603000" />
       <workItem from="1682510160789" duration="2000" />
+      <workItem from="1682516803426" duration="599000" />
+      <workItem from="1682613694096" duration="1280000" />
+      <workItem from="1682886584565" duration="961000" />
     </task>
     <task id="LOCAL-00001" summary="change workshop 3">
       <created>1681993606981</created>
@@ -268,5 +361,20 @@
     <MESSAGE value="change workshop 3" />
     <MESSAGE value="change workshop" />
     <option name="LAST_COMMIT_MESSAGE" value="change workshop" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Skeleton/src/com/company/oop/agency/core/AgencyEngineImpl.java</url>
+          <line>24</line>
+          <properties class="com.company.oop.agency.core.AgencyEngineImpl" method="start">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
