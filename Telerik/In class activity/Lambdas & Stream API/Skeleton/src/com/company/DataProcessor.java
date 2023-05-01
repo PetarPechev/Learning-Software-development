@@ -143,6 +143,7 @@ public class DataProcessor {
                 .average()
                 .orElse(0.0);
 
+
 /*        double sum = 0;
 
         for (int i = 0; i < customers.size(); i++) {
@@ -231,6 +232,7 @@ public class DataProcessor {
                         customer.getLikedMovies().stream()
                                 .allMatch(movie -> movie.getGenre().equals(targetGenre)))
                 .collect(Collectors.toList());
+
 
 /*        List<Customer> result = new ArrayList<>();
 
